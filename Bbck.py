@@ -10,26 +10,26 @@ class Button(Widget):
 		self.state = "Not Clicked"
 		self.text = text
 		self.enabled = True
-		self.objects = [Rect(100*size, 30*size, pos, Material((0,0,0), Image.open("./textures/widgets/Button.png"))),
-						Text(self.text,'./textures/16x.ttf', self.size*8, (pos[0]+8, pos[1]+8))]
+		self.objects = [Rect(30*size, 100*size, pos, Material((0,0,0), Image.open("./textures/widgets/Button.png"))),
+						Text(self.text,'./textures/16x.ttf', self.size*8, (pos[0]+8, pos[1]+6))]
 		self.coolDown = 0
-		self.UpdatedDimensions = [100*size, 30*size]
-		self.baseDimensions = [100, 30]
-		self.Dimensions = [100*size, 30*size]
+		self.UpdatedDimensions = [30*size, 100*size]
+		self.baseDimensions = [30, 100]
+		self.Dimensions = [30*size, 100*size]
 		for obj in self.objects:
 			if obj.type=="Text":
 				length = obj.textRect.width+10
-				height = obj.textRect.height+4
+				height = obj.textRect.height+5
 				self.UpdatedDimensions[1] = self.UpdatedDimensions[1] + length
 				self.UpdatedDimensions[0] = self.UpdatedDimensions[0] + height
 
 	def updateTextures(self, state):
 		if state == "Clicked":
-			self.objects[0] = Rect(100*self.size, 30*self.size, self.pos, Material((0,0,0), Image.open("./textures/widgets/ButtonClicked.png")))
+			self.objects[0] = Rect(30*self.size, 100*self.size, self.pos, Material((0,0,0), Image.open("./textures/widgets/ButtonClicked.png")))
 		if state == "Not Clicked":
-			self.objects[0] = Rect(100*self.size, 30*self.size, self.pos, Material((0,0,0), Image.open("./textures/widgets/Button.png")))
+			self.objects[0] = Rect(30*self.size, 100*self.size, self.pos, Material((0,0,0), Image.open("./textures/widgets/Button.png")))
 		if state == "Hovered":
-			self.objects[0] = Rect(100*self.size, 30*self.size, self.pos, Material((0,0,0), Image.open("./textures/widgets/ButtonHovered.png")))
+			self.objects[0] = Rect(30*self.size, 100*self.size, self.pos, Material((0,0,0), Image.open("./textures/widgets/ButtonHovered.png")))
 
 	def render(self, surface):
 		bg, text = self.objects
@@ -37,7 +37,7 @@ class Button(Widget):
 		bg.p = (0,0)
 		bg.a = self.UpdatedDimensions[0]
 		bg.b = self.UpdatedDimensions[1]
-		# bg.debug = True
+		bg.debug = True
 
 		dest = Surface(self.baseDimensions)
 		bg.render(dest)

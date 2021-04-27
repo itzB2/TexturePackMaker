@@ -11,7 +11,7 @@ Bruh = False
 def action(self):
 	print(self.text)
 
-Button = Button((100,100), 1, action, "")
+Button = Button((100,100), 1, action, "Bruh")
 
 counter = 0
 
