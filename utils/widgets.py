@@ -95,6 +95,7 @@ class Rect:
 				pygame.draw.rect(surface, (255,255,255), self.Rect)
 			else:
 				pygame.draw.rect(surface, self.m.color, self.Rect)
+
 class Text:
 	def __init__(self, text, fontPath, size, pos):
 		self.text = text
@@ -104,7 +105,7 @@ class Text:
 		self.type = "Text"
 		font = pygame.font.Font(self.p, self.size)
 		text = font.render(self.text, True, (255,255,255))
-		textRect  = pygame.Rect(self.pos, (text.get_rect()[0], text.get_rect()[1]))
+		textRect  = pygame.Rect(self.pos, (text.get_rect().height, text.get_rect().width))
 		self.text = text
 		self.textRect = textRect
 
@@ -117,10 +118,3 @@ class Widget:
 	def render(self, surface):
 		for obj in self.objects:
 			obj.render(surface)
-
-class Animation:
-	def __init__(self):
-		pass
-	def start(self):
-		pass
-

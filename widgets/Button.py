@@ -18,8 +18,8 @@ class Button(Widget):
 		self.Dimensions = [100*size, 30*size]
 		for obj in self.objects:
 			if obj.type=="Text":
-				length = obj.textRect.width+10
-				height = obj.textRect.height+4
+				length = obj.textRect.width-15
+				height = obj.textRect.height-74
 				self.UpdatedDimensions[1] = self.UpdatedDimensions[1] + length
 				self.UpdatedDimensions[0] = self.UpdatedDimensions[0] + height
 
@@ -56,7 +56,7 @@ class Button(Widget):
 
 		def checkCollision():
 
-			return mPos[0] > self.pos[0] and mPos[0] < self.pos[0]+self.UpdatedDimensions[1] and mPos[1] > self.pos[1] and mPos[1] < self.pos[1]+self.UpdatedDimensions[0]
+			return mPos[0] > self.pos[0] and mPos[0] < self.pos[0]+self.UpdatedDimensions[0] and mPos[1] > self.pos[1] and mPos[1] < self.pos[1]+self.UpdatedDimensions[1]
 
 		self.render(surface)
 		if checkCollision() and self.enabled == True:
