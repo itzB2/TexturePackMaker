@@ -12,7 +12,6 @@ class Button(Widget):
 		self.enabled = True
 		self.objects = [Rect(30*size, 100*size, pos, Material((0,0,0), Image.open("./textures/widgets/Button.png"))),
 						Text(self.text,'./textures/16x.ttf', self.size*8, (pos[0]+8, pos[1]+6))]
-		super().__init__()
 		self.coolDown = 0
 		self.UpdatedDimensions = [30*size, 100*size]
 		self.baseDimensions = [30, 100]
@@ -42,7 +41,7 @@ class Button(Widget):
 		dest = Surface(self.baseDimensions)
 		bg.render(dest)
 
-		scaledSurface = pygame.transform.scale(dest, self.UpdatedDimensions)
+		scaledSurface = pygame.transform.scale(dest, (self.UpdatedDimensions[1], self.UpdatedDimensions[0]))
 		scaledRect = pygame.Rect(self.pos, (scaledSurface.get_rect().width, scaledSurface.get_rect().height))
 
 		surface.blit(scaledSurface, scaledRect)

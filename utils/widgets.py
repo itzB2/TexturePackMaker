@@ -74,6 +74,7 @@ class Rect:
 		self.p = pos
 		self.m = mat
 		self.type = "Rect"
+		self.debug = False
 
 	@property
 	def WhiteSurface(self):
@@ -87,11 +88,13 @@ class Rect:
 
 	def render(self, surface):
 		self.Rect = pygame.Rect(self.p, (self.a, self.b))
-		if self.m.isImage:
+		if self.m.isImage and self.debug == False:
 			surface.blit(Sprite(PilImage = self.m.texture).surface, self.Rect)
 		else:
-			pygame.draw.rect(surface, self.m.color, self.Rect)
-
+			if self.debug == True:
+				pygame.draw.rect(surface, (255,255,255), self.Rect)
+			else:
+				pygame.draw.rect(surface, self.m.color, self.Rect)
 class Text:
 	def __init__(self, text, fontPath, size, pos):
 		self.text = text
