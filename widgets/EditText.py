@@ -19,6 +19,7 @@ class EditText(Widget):
 		self.Dimensions = [100*size, 30*size]
 		pointerPos = []
 		ratio = Ratio(3, 10)
+		self.tPRatio = Ratio(10, 30)
 		for obj in self.objects:
 			if obj.type=="Text":				
 				height = obj.textRect.height-74
@@ -47,13 +48,15 @@ class EditText(Widget):
 			bg.b = self.UpdatedDimensions[1]
 			bg.refresh()
 
-			textPointer.p = ((self.pointerPos[0])+(2*text.textRect.width)+5, self.pointerPos[1])
-			textPointer.scaleTranspTexture((10*self.size, 30*self.size))
+			textPointer.p = ((self.pointerPos[0])+(2*text.textRect.width)+5, self.pointerPos[1]-(5*self.size))
+			textPointer.a = self.tPRatio.getRatioFromB(self.UpdatedDimensions[1])
+			textPointer.b = self.UpdatedDimensions[1]
 			textPointer.refresh()
 
 			# bg.debug = True
 
 			dest = Surface(self.baseDimensions)
+			surRect = surface.get_rect()
 			bg.render(dest)
 
 			scaledSurface = pygame.transform.scale(dest, self.UpdatedDimensions)
