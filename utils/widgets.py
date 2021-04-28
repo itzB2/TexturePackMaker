@@ -4,9 +4,10 @@ from utils.ImageMask import Mask, Sprite
 import time, asyncio
 
 class Material:
-	def __init__(self, color, Texture="Blank"):
+	def __init__(self, color, Texture="Blank", transparent=False):
 		self.t = Texture
 		self.c = color
+		self.transp = transparent
 
 	@property
 	def isImage(self):
@@ -26,6 +27,8 @@ class Circle:
 		self.p = pos
 		self.m = mat
 		self.type = "Circle"
+		self.Ws = self.WhiteSurface
+		self.maskedImage = Mask(self.Ws).maskImage(self.m.texture).surface
 
 	@property
 	def WhiteSurface(self):
@@ -39,10 +42,13 @@ class Circle:
 
 	def render(self, surface):
 		if self.m.isImage:
-			maskedSurface = Mask(self.WhiteSurface).maskImage(self.m.texture).surface
-			surface.blit(maskedSurface, pygame.Rect(pos[0], pos[1],self.r, self.r))
+			surface.blit(self.maskedSurface, pygame.Rect(pos[0], pos[1],self.r, self.r))
 		else:
 			pygame.draw.circle(surface, self.m.color, self.p, self.r)
+
+	def refresh(self):
+		self.Ws = self.WhiteSurface
+		self.maskedImage = Mask(self.Ws).maskImage(self.m.texture).surface
 
 class Square:
 	def __init__(self, sideLength, pos, mat):
@@ -50,6 +56,9 @@ class Square:
 		self.p = pos
 		self.m = mat
 		self.type = "Square"
+		self.Rect = pygame.Rect(self.p, (self.s, self.s))
+		self.Ws = self.WhiteSurface
+		self.surfaceTexture = Sprite(PilImage = self.m.texture).surface		
 
 	@property
 	def WhiteSurface(self):
@@ -58,14 +67,19 @@ class Square:
 		else:
 			surf = pygame.Surface((self.s+100, self.s+100))
 
-		pygame.draw.rect(surf, (255,255,255), pygame.Rect(self.p, (self.s, self.s)))
+		pygame.draw.rect(surf, (255,255,255), self.Rect)
 		return surf
 
 	def render(self, surface):
 		if self.m.isImage:
-			surface.blit(Sprite(PilImage = self.m.texture).surface, pygame.Rect(self.p[0], self.p[1],self.s, self.s))
+			surface.blit(self.surfaceTexture, self.Rect)
 		else:
-			pygame.draw.rect(surface, self.m.color, pygame.Rect(self.p[0], self.p[1],self.s, self.s))
+			pygame.draw.rect(surface, self.m.color, self.Rect)
+
+	def refresh(self):
+		self.Rect = pygame.Rect(self.p, (self.s, self.s))
+		self.Ws = self.WhiteSurface
+		self.surfaceTexture = Sprite(PilImage = self.m.texture).surface	
 
 class Rect:
 	def __init__(self, a, b, pos, mat):
@@ -73,28 +87,57 @@ class Rect:
 		self.b = b
 		self.p = pos
 		self.m = mat
+		m = mat
 		self.type = "Rect"
 		self.debug = False
+		self.transp = mat.transp
+		if not self.transp:
+			self.surfaceTexture = Sprite(PilImage = self.m.texture).surface
+		else:
+			self.surfaceTexture = pygame.image.load(m.texture)
+			self.surfaceRect = self.surfaceTexture.get_rect()
+			self.surfaceRect.topright = self.p
+		self.Rect = pygame.Rect(self.p, (self.a, self.b))
+		self.Ws = self.WhiteSurface
+
+	def scaleTranspTexture(self, scale):
+		self.surfaceTexture = pygame.transform.scale(pygame.image.load(self.m.texture), scale)
+		self.surfaceRect = self.surfaceTexture.get_rect()
+		self.surfaceRect.topright = self.p
 
 	@property
 	def WhiteSurface(self):
-		if self.m.isImage:
+		if self.m.isImage and not self.transp:
 			surf = pygame.Surface(self.m.texture.size)
 		else:
 			surf = pygame.Surface((self.a+100, self.b+100))
-		self.Rect = pygame.Rect(self.p, (self.a, self.b))
 		pygame.draw.rect(surf, (255,255,255), self.Rect)
 		return surf
 
 	def render(self, surface):
-		self.Rect = pygame.Rect(self.p, (self.a, self.b))
-		if self.m.isImage and self.debug == False:
-			surface.blit(Sprite(PilImage = self.m.texture).surface, self.Rect)
+		
+		if self.m.isImage and self.debug == False and not self.transp:
+			surface.blit(self.surfaceTexture, self.Rect)
+
+		elif self.m.isImage and self.debug == False and self.transp:
+			surface.blit(self.surfaceTexture, self.surfaceRect)
 		else:
 			if self.debug == True:
 				pygame.draw.rect(surface, (255,255,255), self.Rect)
 			else:
 				pygame.draw.rect(surface, self.m.color, self.Rect)
+
+	def refresh(self):
+		m = self.m
+		self.transp = m.transp
+		if not self.transp:
+			self.surfaceTexture = Sprite(PilImage = self.m.texture).surface
+		else:
+			self.surfaceTexture = pygame.image.load(m.texture)
+			self.surfaceRect = self.surfaceTexture.get_rect()
+			self.surfaceRect.topright = self.p			
+		self.Rect = pygame.Rect(self.p, (self.a, self.b))		
+		self.Ws = self.WhiteSurface
 
 class Text:
 	def __init__(self, text, fontPath, size, pos):
@@ -106,11 +149,16 @@ class Text:
 		font = pygame.font.Font(self.p, self.size)
 		text = font.render(self.text, True, (255,255,255))
 		textRect  = pygame.Rect(self.pos, (text.get_rect().height, text.get_rect().width))
-		self.text = text
+		self.textObj = text
 		self.textRect = textRect
 
 	def render(self, surface):
-		surface.blit(self.text, self.textRect)
+		surface.blit(self.textObj, self.textRect)
+
+	def refresh(self):
+		self.font = pygame.font.Font(self.p, self.size)
+		self.textObj = self.font.render(self.text, True, (255,255,255))
+		self.textRect  = pygame.Rect(self.pos, (self.textObj.get_rect().height, self.textObj.get_rect().width))
 
 class Widget:
 	def __init__(self):

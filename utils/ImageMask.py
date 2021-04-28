@@ -42,7 +42,7 @@ class Mask():
 
 		image = np.array(s.PilImage)
 		MaskImage = np.array(m.PilImage).T
-		print(len(image), len(MaskImage), len(image[0]), len(MaskImage[0]))
+		# print(len(image), len(MaskImage), len(image[0]), len(MaskImage[0]))
 		return Sprite(PilImage = Image.fromarray(np.dstack((image,MaskImage))))
 
 	def maskImage(self, image):
@@ -53,6 +53,6 @@ class Mask():
 
 		image = np.array(image)
 		MaskImage = np.array(m.PilImage).T
-		print(len(image), len(MaskImage), len(image[0]), len(MaskImage[0]))
+		# print(len(image), len(MaskImage), len(image[0]), len(MaskImage[0]))
 		return Sprite(PilImage = Image.fromarray(np.dstack((image,MaskImage))))
 

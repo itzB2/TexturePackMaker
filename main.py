@@ -1,5 +1,8 @@
 import pygame
 from widgets.Button import Button
+from widgets.Label import Label
+from widgets.EditText import EditText
+from cursor import Cursor
 
 pygame.init()
 Window = pygame.display.set_mode((500,500))
@@ -8,21 +11,22 @@ clock = pygame.time.Clock()
 
 Bruh = False
 
-def action(self):
-	print(self.text)
+cursor = Cursor(r"./textures/cursors/Normal.png", r"./textures/cursors/MouseClick/", Window)
 
-Button = Button((100,100), 1, action, "Bruh")
+editText = EditText((100, 100), 2, "Bruh")
 
-counter = 0
-
+pygame.mouse.set_visible(False)
 while not Bruh:
 	clock.tick(60)
-	for event in pygame.event.get():
+	events = pygame.event.get()
+	for event in events:
 		if event.type == pygame.QUIT:
 			Bruh = True
+		if event.type == pygame.KEYDOWN:
+			if event.key == pygame.K_RETURN:
+				print(pygame.mouse.get_pos())
 
-	Button.update(pygame.event.get(), Window)
+	Window.fill((0,0,0))
+	editText.update(Window)
+	cursor.update(events)
 	pygame.display.flip()
-	# counter += 1
-	# if counter == 1:
-	# 	Bruh = True
