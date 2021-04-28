@@ -101,9 +101,8 @@ class Rect:
 		self.Ws = self.WhiteSurface
 
 	def scaleTranspTexture(self, scale):
-		self.surfaceTexture = pygame.transform.scale(pygame.image.load(self.m.texture), scale)
-		self.surfaceRect = self.surfaceTexture.get_rect()
-		self.surfaceRect.topright = self.p
+		self.surfaceTexture = pygame.transform.scale(self.surfaceTexture, scale)
+		self.surfaceRect = self.Rect
 
 	@property
 	def WhiteSurface(self):

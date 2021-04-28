@@ -49,8 +49,9 @@ class EditText(Widget):
 			bg.refresh()
 
 			textPointer.p = ((self.pointerPos[0])+(2*text.textRect.width)+5, self.pointerPos[1]-(5*self.size))
-			textPointer.a = self.tPRatio.getRatioFromB(self.UpdatedDimensions[1])
-			textPointer.b = self.UpdatedDimensions[1]
+			textPointer.a = int(self.tPRatio.getRatioFromB(self.UpdatedDimensions[1]))
+			textPointer.b = int(self.UpdatedDimensions[1])
+			textPointer.scaleTranspTexture((textPointer.a, textPointer.b))
 			textPointer.refresh()
 
 			# bg.debug = True
