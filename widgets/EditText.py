@@ -22,16 +22,14 @@ class EditText(Widget):
 		self.tPRatio = Ratio(10, 30)
 		for obj in self.objects:
 			if obj.type=="Text":				
-				height = obj.textRect.height-74
-				length = int(ratio.getRatioFromB(height))			
-				self.UpdatedDimensions[1] = self.UpdatedDimensions[1] + length
-				self.UpdatedDimensions[0] = self.UpdatedDimensions[0] + height
-				obj.pos[0] = self.pos[0]+int(height/2)+(10*self.size)
-				obj.pos[1] = self.pos[1]+int(length/2)+5
+				length = obj.textRect.height
+				height = int(ratio.getRatioFromB(length))			
+				self.UpdatedDimensions[1] = self.UpdatedDimensions[1] + height
+				self.UpdatedDimensions[0] = self.UpdatedDimensions[0] + length
 				obj.refresh()
-				self.pointerPos = [obj.textRect.right+((2*self.size)+(10*self.size)), obj.pos[1]]
+				self.pointerPos = [obj.textRect.right, obj.pos[1]]
 		# print(pointerPos)
-		self.textPointer = Rect(10, 30, self.pointerPos, Material((0,0,0), r"./textures/cursors/TextPointer.png", True))
+		self.textPointer = Rect(10, 20, self.pointerPos, Material((0,0,0), r"./textures/cursors/TextPointer.png", True))
 
 	def updateTextures(self, state):
 		self.state = state
@@ -40,19 +38,28 @@ class EditText(Widget):
 		if state == "Not Clicked":
 			self.objects[0] = Rect(100*self.size, 30*self.size, self.pos, Material((0,0,0), Image.open("./textures/widgets/LabelBG.png")))
 
+	def refreshBG(self, factor):
+		text = self.objects[1]
+		length = text.textRect.height*factor
+		height = int(self.tPRatio.getRatioFromB(length))			
+		self.UpdatedDimensions[1] += height
+		self.UpdatedDimensions[0] += length
+
 	def render(self, surface):
 		if self.state == "Clicked":
 			bg, text, textPointer = self.objects
+
 			bg.p = (0,0)
 			bg.a = self.UpdatedDimensions[0]
 			bg.b = self.UpdatedDimensions[1]
 			bg.refresh()
 
-			textPointer.p = ((self.pointerPos[0])+(2*text.textRect.width)+5, self.pointerPos[1]-(5*self.size))
-			textPointer.a = int(self.tPRatio.getRatioFromB(self.UpdatedDimensions[1]))
-			textPointer.b = int(self.UpdatedDimensions[1])
+			self.pointerPos = [text.textRect.right, text.pos[1]]
+
+			textPointer.a = int(self.tPRatio.getRatioFromB(20*self.size))
+			textPointer.b = int(20*self.size)
+			textPointer.p = (self.pointerPos[0], self.pointerPos[1])
 			textPointer.scaleTranspTexture((textPointer.a, textPointer.b))
-			textPointer.refresh()
 
 			# bg.debug = True
 
@@ -87,9 +94,29 @@ class EditText(Widget):
 			
 			text.render(surface)
 
-	def update(self, surface):
-		def checkCollision():
+	def update(self, evetns, surface):
+		if self.state == "Clicked":
+			textObj = self.objects[1]
+			self.text = textObj.text
+			for events in evetns:
+				if events.type == pygame.KEYDOWN:
+					if events.key == pygame.K_BACKSPACE:
+						if len(textObj.text) > 0:
+							textObj.text = textObj.text[:-1]
+							textObj.refresh()
+							if len(textObj.text) > 4:
+								self.refreshBG(-1)
+							if self.visible:
+								self.render(surface)
+					else:
+						textObj.text += events.unicode
+						textObj.refresh()
+						if len(textObj.text) > 4:
+							self.refreshBG(1)
+						if self.visible:
+							self.render(surface)						
 
+		def checkCollision():
 			return mPos[0] > self.pos[0] and mPos[0] < self.pos[0]+self.UpdatedDimensions[0] and mPos[1] > self.pos[1] and mPos[1] < self.pos[1]+self.UpdatedDimensions[1]
 
 		if self.visible:

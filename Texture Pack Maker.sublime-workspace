@@ -1,0 +1,946 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text",
+				"textPointer"
+			],
+			[
+				"re",
+				"refresh"
+			],
+			[
+				"Text",
+				"Texture"
+			],
+			[
+				"up",
+				"update〔function〕"
+			],
+			[
+				"update",
+				"update〔function〕"
+			],
+			[
+				"get_",
+				"get_rect"
+			],
+			[
+				"t",
+				"textRect"
+			],
+			[
+				"te",
+				"textPointer〔variable〕"
+			],
+			[
+				"tex",
+				"textPointer"
+			],
+			[
+				"su",
+				"surfaceTexture〔variable〕"
+			],
+			[
+				"sc",
+				"scaledtP〔variable〕"
+			],
+			[
+				"get",
+				"get_rect"
+			],
+			[
+				"sur",
+				"surRect"
+			],
+			[
+				"tetx",
+				"textPointer"
+			],
+			[
+				"len",
+				"length〔variable〕"
+			],
+			[
+				"tet",
+				"textRect"
+			],
+			[
+				"tr",
+				"transp"
+			],
+			[
+				"po",
+				"pointerPos〔variable〕"
+			],
+			[
+				"cu",
+				"cursor"
+			],
+			[
+				"st",
+				"startAnim〔variable〕"
+			],
+			[
+				"s",
+				"SetState〔function〕"
+			],
+			[
+				"B",
+				"Button"
+			],
+			[
+				"c",
+				"cImage〔variable〕"
+			],
+			[
+				"cli",
+				"clickAnim〔argument〕"
+			],
+			[
+				"ene",
+				"enabled"
+			],
+			[
+				"cl",
+				"clickAnim"
+			],
+			[
+				"Sc",
+				"SceneManager"
+			],
+			[
+				"ob",
+				"objects〔variable〕"
+			],
+			[
+				"obj",
+				"objects"
+			],
+			[
+				"li",
+				"listBruh〔variable〕"
+			],
+			[
+				"lis",
+				"listBruh"
+			],
+			[
+				"scal",
+				"scaledSurface〔variable〕"
+			],
+			[
+				"de",
+				"dest〔variable〕"
+			],
+			[
+				"o",
+				"objects"
+			],
+			[
+				"P",
+				"PilImage〔variable〕"
+			],
+			[
+				"u",
+				"UpdatedDimensions〔variable〕"
+			],
+			[
+				"Bu",
+				"ButtonObject〔argument〕"
+			],
+			[
+				"Button",
+				"ButtonObject〔argument〕"
+			],
+			[
+				"Butt",
+				"ButtonPress〔class〕"
+			],
+			[
+				"m",
+				"mClicked"
+			],
+			[
+				"async",
+				"asyncio"
+			],
+			[
+				"C",
+				"Clicked"
+			],
+			[
+				"Ma",
+				"Material〔class〕"
+			],
+			[
+				"ma",
+				"maskedSurface"
+			],
+			[
+				"Mask",
+				"MaskImage"
+			],
+			[
+				"py",
+				"pygameSurface〔variable〕"
+			],
+			[
+				"rer",
+				"return〔keyword〕"
+			],
+			[
+				"pro",
+				"property\tNew Property"
+			],
+			[
+				"im",
+				"imgdata〔variable〕"
+			],
+			[
+				"from",
+				"fromarray〔function〕"
+			],
+			[
+				"lum",
+				"lum_img_arr"
+			],
+			[
+				"cr",
+				"croppedImage〔variable〕"
+			],
+			[
+				"p_",
+				"p_title"
+			],
+			[
+				"io",
+				"iostream\tstandard header"
+			],
+			[
+				"l",
+				"lSDL2"
+			],
+			[
+				"scr",
+				"scroll_y〔variable〕"
+			],
+			[
+				"mou",
+				"mouseLocation〔variable〕"
+			],
+			[
+				"dr",
+				"drawPixel〔function〕"
+			],
+			[
+				"pygame",
+				"pygame.mouse.get_pressed"
+			],
+			[
+				"wid",
+				"widget"
+			],
+			[
+				"widgt",
+				"widget"
+			],
+			[
+				"widgte",
+				"widgets"
+			],
+			[
+				"widget",
+				"widgets"
+			],
+			[
+				"A",
+				"Arg"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"data",
+				"dataType〔variable〕"
+			],
+			[
+				"dat",
+				"dataType〔variable〕"
+			],
+			[
+				"str",
+				"string〔variable〕"
+			],
+			[
+				"try",
+				"try\tTry/Except/Finally"
+			],
+			[
+				"float",
+				"floatInt〔variable〕"
+			],
+			[
+				"int",
+				"integer〔variable〕"
+			],
+			[
+				"func",
+				"function〔variable〕"
+			],
+			[
+				"run",
+				"runtime〔variable〕"
+			],
+			[
+				"runt",
+				"runtimeFunctions〔variable〕"
+			],
+			[
+				"V",
+				"VarVal"
+			],
+			[
+				"funct",
+				"functionList〔variable〕"
+			],
+			[
+				"Func",
+				"Function"
+			],
+			[
+				"Var",
+				"VarName〔variable〕"
+			],
+			[
+				"Va",
+				"VarVal〔variable〕"
+			],
+			[
+				"Arg",
+				"Arg0"
+			],
+			[
+				"AR",
+				"Arg0"
+			],
+			[
+				"ke",
+				"keyword〔variable〕"
+			],
+			[
+				"en",
+				"endVal〔variable〕"
+			],
+			[
+				"add",
+				"addFunc〔variable〕"
+			],
+			[
+				"fun",
+				"functionName〔variable〕"
+			],
+			[
+				"splt",
+				"split"
+			],
+			[
+				"du",
+				"dumps〔function〕"
+			],
+			[
+				"in",
+				"inputText〔variable〕"
+			],
+			[
+				"_",
+				"_Widget"
+			],
+			[
+				"Op",
+				"OpenFile"
+			],
+			[
+				"New",
+				"NewFile"
+			],
+			[
+				"if",
+				"ifmain\tif __name__ == '__main__'"
+			],
+			[
+				"F",
+				"FontSize"
+			],
+			[
+				"fotn",
+				"fontSize〔variable〕"
+			],
+			[
+				"Key",
+				"KeyString〔variable〕"
+			],
+			[
+				"De",
+				"DecoderOrderGenerator〔function〕"
+			],
+			[
+				"index",
+				"index_list〔variable〕"
+			],
+			[
+				"a",
+				"addBlock〔function〕"
+			],
+			[
+				"off",
+				"offsetY"
+			],
+			[
+				"ch",
+				"chunkSeed"
+			],
+			[
+				"chu",
+				"chunkSize"
+			],
+			[
+				"noi",
+				"noiseVal"
+			],
+			[
+				"ra",
+				"randint〔module〕"
+			],
+			[
+				"see",
+				"seedNumber〔variable〕"
+			],
+			[
+				"demo",
+				"demo_der〔class〕"
+			],
+			[
+				"path",
+				"pathImage〔variable〕"
+			],
+			[
+				"Ab",
+				"Abilities"
+			],
+			[
+				"Fu",
+				"FullData〔variable〕"
+			],
+			[
+				"D",
+				"DownloadImage"
+			],
+			[
+				"Name",
+				"NameList〔variable〕"
+			],
+			[
+				"pat",
+				"pathImage"
+			],
+			[
+				"K",
+				"KeyStyle"
+			],
+			[
+				"gen",
+				"genderRatio"
+			],
+			[
+				"ID",
+				"ID2"
+			],
+			[
+				"Abili",
+				"Ability"
+			],
+			[
+				"typ",
+				"type〔class〕"
+			],
+			[
+				"type",
+				"types〔variable〕"
+			],
+			[
+				"Pars",
+				"ParseTable2"
+			],
+			[
+				"N",
+				"NationalNumber"
+			],
+			[
+				"Par",
+				"ParseTable2"
+			],
+			[
+				"col",
+				"colDat〔variable〕"
+			],
+			[
+				"row",
+				"rowID〔variable〕"
+			],
+			[
+				"Get",
+				"GetBasicData"
+			],
+			[
+				"body",
+				"bodyContent〔variable〕"
+			],
+			[
+				"bo",
+				"bodyE〔variable〕"
+			],
+			[
+				"I",
+				"ImgGen"
+			],
+			[
+				"csv",
+				"csv_file〔variable〕"
+			],
+			[
+				"T",
+				"True"
+			]
+		]
+	},
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ip",
+				"Package Control: Install Package"
+			],
+			[
+				"package re",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"er",
+				"Emmet: Remove Tag"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"LiveReload: Enable/disable plugins",
+				"LiveReload: Enable/disable plug-ins"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 158.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/F/Beethoven/Projects/Python/Texture Pack maker/widgets/Label.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/widgets/Button.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/Scene/SceneManager.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/Scene/Scene.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/utils/ImageMask.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/RoughNote.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/utils/funcs.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/utils/widgets.py",
+		"/F/Unsorted/Python Projects/Chess AI/board.py",
+		"/F/Unsorted/Python Projects/Chess AI/square.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/ctm.py",
+		"/F/Beethoven/Minecraft/Texture Packs/Animated Bliss Temp/Wool/Aqua/wool.properties",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/ids/data_1.8.txt",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/ids/data_1.11.txt",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/ids/data_1.10.txt",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/main.py",
+		"/F/Unsorted/Algorithms/dictionary.py",
+		"/F/Python Projects/Texture Pack maker/main.py",
+		"/F/Python Projects/Texture Pack maker/utils/widgets.py",
+		"/F/C Triplets Projects/C++/Texture Pack Maker/TexturePackMaker.sublime-workspace",
+		"/F/SDL/Tutorial/tutorial.sublime-project",
+		"/F/SDL/test.py",
+		"/F/Devs Dos/Sublime Text/Data/Packages/Default/exec.py",
+		"/F/Python Projects/Pixel Editor/zoomLengths.json",
+		"/F/Python Projects/Pixel Editor/RoughNote.py",
+		"/F/Algorithms/dictionary.py",
+		"/F/Python Projects/Mesh Generation with python and perlin noise/HeightMap.py",
+		"/F/Python Projects/Python Minecraft Ursina/main.py",
+		"/C/Users/George/AppData/Roaming/.minecraft/webcache/Cache/f_000004",
+		"/F/Python Projects/RoughNotes/TextEditorRoughNote.py",
+		"/C/Users/George/Procedural",
+		"/C/Users/George/Procedural Terrain Generaion/Terrain",
+		"/C/Users/George/Procedural Terrain Generaion/Generaion/Assets/Scripts/Noise.cs",
+		"/C/Users/George/Procedural Terrain Generaion/ProceduralTerrainGeneration.sublime-project",
+		"/F/Python Minecraft Ursina/main.py",
+		"/C/Users/George/Pictures/10.py",
+		"/F/decode.json",
+		"/F/Joab's crappy encrytion.py",
+		"/C/Users/George/Pictures/secret_msg_decoder_and_encoder.py",
+		"/F/Python Minecraft/Testing/Block.py",
+		"/F/Python Minecraft/BlockData.py",
+		"/F/Python Minecraft/Faithful/pack.mcmeta",
+		"/F/Python Minecraft/openPGM.py",
+		"/F/socketswifipy.py",
+		"/F/Randomizer/loot_tables/blocks/acacia_button.json",
+		"/C/Users/George/Pictures/test.py",
+		"/C/Users/George/AppData/Roaming/.minecraft/launcher_profiles.json",
+		"/C/Users/George/AppData/Roaming/.minecraft/launcher_accounts.json",
+		"/C/Users/George/Documents/Pokedex/PokemonNames.txt",
+		"/C/Users/George/Documents/Pokedex/Data/Pokemon/Bayleef.json",
+		"/C/Users/George/Documents/Pokedex/Data/Pokemon/Bastiodon.json",
+		"/C/Users/George/Documents/Pokedex/Data/Pokemon/Data.json",
+		"/F/Pokedex/HTML Dat/sample.html",
+		"/F/Pokedex/HTML Dat/bData.txt",
+		"/F/roughNote.py",
+		"/F/Pokedex/DataExtract.py",
+		"/F/Pokedex/TypeEffectiveness.json",
+		"/F/Pokedex/HTML_Analyze.py",
+		"/F/Pokedex/PokemonNames.txt",
+		"/F/image text/whatsapp automation.py",
+		"//DESKTOP-O9MKOTI/4 Beethu/Fin/1/CHIP8.py",
+		"/F/CHIP-8/CHIP8.py",
+		"/F/Chip8Python-master/chip8/cpu.py",
+		"/F/Emulator/Python/CHIP-8/BlinkingBox.ch8",
+		"/F/AOC/Day3.input",
+		"/F/AOC/Day3.py",
+		"/F/AOC/Day2.input",
+		"/F/AOC/Day1.py",
+		"/F/AOC/Day2.py",
+		"/F/AOC/Day1.input",
+		"/F/Discord Bot/RoughNote.py",
+		"/F/sockets/server.py",
+		"/F/sockets/UserInfo.txt",
+		"/F/sockets/test.py",
+		"/F/sockets/client.py",
+		"/F/Public socket/client.py",
+		"/F/Projects/RPS/comms.py",
+		"/F/Projects/RPS/script.py",
+		"/F/Projects/RPS/project.py",
+		"/F/Projects/RPS/MAIN.RPS",
+		"/F/Projects/RPS/main.py",
+		"/F/Projects/RPS/conf/onORoff.yaml",
+		"/F/Projects/RPS/utils.py",
+		"/F/Projects/RPS/conf/COMMS.yaml",
+		"/F/Projects/RPS/TEST_01/config.yaml",
+		"/F/Projects/RPS/config.py",
+		"/F/Projects/RPS/projects.py",
+		"/F/Projects/RPS/parser.py",
+		"/F/Projects/RPS/eval.py",
+		"/F/Projects/RPS/exec.py",
+		"/F/Projects/RPS/TEST_01/main.rps",
+		"/F/Discord Bot/roles.json",
+		"/F/Discord Bot/spyfall.py",
+		"/C/Users/George/Music/Tag.py",
+		"/C/Users/George/Music/newtry.py",
+		"/C/Users/George/Music/utils.py",
+		"/C/Users/George/Music/Data.txt",
+		"/C/Users/George/Music/index.html",
+		"/C/Users/George/Music/utils.y",
+		"//DESKTOP-O9MKOTI/internship/newtry.py",
+		"/F/JB Intern/UncleGeorge/index.html",
+		"/F/JB Intern/newtry.py",
+		"/F/pyjunk/just html.py",
+		"/F/JB Intern/widgets/HelloWorld/html.html",
+		"/F/Emulator/Python/CHIP-8/Debug.txt",
+		"/F/Emulator/CPP/CHIP-8/main.cpp",
+		"/F/Emulator/CHIP-8/main.py",
+		"/C/Users/George/Downloads/chip-8.py",
+		"/F/Emulator/CHIP-8/arch.py",
+		"/C/Users/George/Downloads/main.cpp",
+		"/F/Emulator/CHIP-8/chip8.py",
+		"/F/Emulator/CHIP-8/try.py",
+		"/F/Emulator/CHIP-8/Debug.txt",
+		"/F/Emulator/CHIP-8/archive.py",
+		"/F/Emulator/CHIP-8/ROMS/IBM Logo.ch8",
+		"/F/Emulator/CHIP-8/message.txt",
+		"/F/Emulator/CHIP-8/opcodes.py",
+		"/F/Emulator/CHIP-8/GameEssentials.py",
+		"/F/Emulator/CHIP-8/cpu.py",
+		"/F/Emulator/CHIP-8/ROMS/test.ch8",
+		"/F/Emulator/CHIP-8/C/dissassemble.c",
+		"/F/Emulator/CHIP-8/ROMS/BC_test-1.ch8",
+		"/H/grab_asap.bat",
+		"/H/grab.bat",
+		"/H/Projects/WG/good-app-no-virus/wifi_asap.py",
+		"/H/Projects/WG/good-app-no-virus/animation.py",
+		"/H/Projects/WG/good-app-no-virus/wifi password.py",
+		"/F/Algorithms/arch.py"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"obj",
+			"    ",
+			".debug",
+			"transparency",
+			"Texture",
+			"400",
+			"300",
+			"400",
+			"Bruh",
+			"textObj",
+			"cursor",
+			"RED",
+			"Bruh",
+			"height",
+			"length",
+			"100",
+			"bg",
+			"textPointer",
+			"eplison",
+			"right",
+			"left",
+			"right",
+			"length",
+			"textPointer.render(surface)",
+			"textPointer",
+			"pointerPos",
+			"png",
+			"length1",
+			"height",
+			"length",
+			"Clicked",
+			"label",
+			"editText",
+			"Label",
+			"EditText",
+			"Label",
+			"from",
+			"250",
+			"400",
+			"300",
+			"200",
+			"HoveringOnClickable",
+			"cur",
+			"length",
+			"textObj",
+			"    ",
+			"lol",
+			"Button",
+			"pass",
+			"clickAnimation",
+			"hidden",
+			"maskedImage",
+			"index",
+			"obj",
+			"append",
+			"500",
+			"dest",
+			"width",
+			"pygame",
+			"Dimensions",
+			"scaledSurface",
+			"100",
+			"surface",
+			"height",
+			"pass",
+			"length",
+			"Animation",
+			"\t\t\t\t\n",
+			"\t\telse:\n\t\t\tself.state = \"Not Clicked\"\n\t\t\t# updateTextures()",
+			"\t\telse:\n\t\t\tself.state = \"Not Clicked\"",
+			"objectsSurface",
+			"objectsSurface.get_rect()",
+			"&&",
+			"elif",
+			"PilImage",
+			"surface",
+			"class Polygon:\n# \tdef __init__(self, radius, pos, mat):\n# \t\tself.r = radius\n# \t\tself.p = pos\n# \t\tself.m = mat\n\n# \t@property\n# \tdef WhiteSurface(self):\n# \t\tif self.m.isImage:\n# \t\t\tsurf = pygame.Surface(self.m.texture.size)\n# \t\telse:\n# \t\t\tsurf = pygame.Surface((self.r+100, self.r+100))\n\n# \t\tpygame.draw.circle(surf, (255,255,255), self.p, self.r)\n# \t\treturn surf\n\n# \tdef render(self, surface):\n# \t\tif self.m.isImage:\n# \t\t\tmaskedSurface = Mask(self.WhiteSurface).maskImage(self.m.texture).surface\n# \t\t\tsurface.blit(maskedSurface, pygame.Rect(pos[0], pos[1],radius, radius))\n# \t\telse:\n# \t\t\tpygame.draw.circle(surface, self.m.color, self.p, self.r)",
+			"sideLength",
+			"radius",
+			"sideLength",
+			"t",
+			"pass",
+			"800",
+			"surface",
+			"type",
+			"radius",
+			"center",
+			"color",
+			"surface",
+			"img",
+			"255",
+			"0",
+			"2505",
+			"300",
+			"100"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"\t",
+			"height",
+			"length",
+			"length1",
+			"\t",
+			"visible",
+			"and",
+			"P"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 84.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.exec":
+	{
+		"height": 296.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.stino_build_panel":
+	{
+		"height": 0.0
+	},
+	"output.stino_panel":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"replace":
+	{
+		"height": 73.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 249.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

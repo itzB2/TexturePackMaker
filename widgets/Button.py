@@ -20,12 +20,10 @@ class Button(Widget):
 		ratio = Ratio(3, 10)
 		for obj in self.objects:
 			if obj.type=="Text":				
-				height = obj.textRect.height-74
+				height = obj.textRect.height
 				length = int(ratio.getRatioFromB(height))			
 				self.UpdatedDimensions[1] = self.UpdatedDimensions[1] + length
 				self.UpdatedDimensions[0] = self.UpdatedDimensions[0] + height
-				obj.pos[0] = self.pos[0]+int(height/2)+(10*self.size)
-				obj.pos[1] = self.pos[1]+int(length/2)+5
 				obj.refresh()
 		self.visible = True
 

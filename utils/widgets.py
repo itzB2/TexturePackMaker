@@ -7,7 +7,7 @@ class Material:
 	def __init__(self, color, Texture="Blank", transparent=False):
 		self.t = Texture
 		self.c = color
-		self.transp = transparent
+		self.transparency = transparent
 
 	@property
 	def isImage(self):
@@ -20,6 +20,13 @@ class Material:
 	@property
 	def color(self):
 		return self.c
+
+	@property
+	def transp(self):
+		return self.transparency
+
+	def __repr__(self):
+		return f"\"Texture\" : {self.t}\n\"Color\" : {self.c}\n\"Transparency\" : {self.transp}"
 
 class Circle:
 	def __init__(self, radius, pos, mat):
@@ -90,10 +97,10 @@ class Rect:
 		m = mat
 		self.type = "Rect"
 		self.debug = False
-		self.transp = mat.transp
-		if not self.transp:
+		self.transp = self.m.transp
+		if not self.transp and self.m.isImage:
 			self.surfaceTexture = Sprite(PilImage = self.m.texture).surface
-		else:
+		elif self.m.isImage and self.transp:
 			self.surfaceTexture = pygame.image.load(m.texture)
 			self.surfaceRect = self.surfaceTexture.get_rect()
 			self.surfaceRect.topright = self.p
@@ -102,7 +109,10 @@ class Rect:
 
 	def scaleTranspTexture(self, scale):
 		self.surfaceTexture = pygame.transform.scale(self.surfaceTexture, scale)
-		self.surfaceRect = self.Rect
+		self.surfaceRect = pygame.Rect(self.p, scale)
+
+	def setRect(self, rect):
+		self.Rect = rect
 
 	@property
 	def WhiteSurface(self):
@@ -129,13 +139,12 @@ class Rect:
 	def refresh(self):
 		m = self.m
 		self.transp = m.transp
+		self.Rect = pygame.Rect(self.p, (self.a, self.b))
 		if not self.transp:
 			self.surfaceTexture = Sprite(PilImage = self.m.texture).surface
 		else:
 			self.surfaceTexture = pygame.image.load(m.texture)
-			self.surfaceRect = self.surfaceTexture.get_rect()
-			self.surfaceRect.topright = self.p			
-		self.Rect = pygame.Rect(self.p, (self.a, self.b))		
+			self.surfaceRect.topright = self.p
 		self.Ws = self.WhiteSurface
 
 class Text:
@@ -147,17 +156,21 @@ class Text:
 		self.type = "Text"
 		font = pygame.font.Font(self.p, self.size)
 		text = font.render(self.text, True, (255,255,255))
-		textRect  = pygame.Rect(self.pos, (text.get_rect().height, text.get_rect().width))
+		textRect  = pygame.Rect(self.pos, (text.get_rect().width, text.get_rect().height))
 		self.textObj = text
 		self.textRect = textRect
+		self.debug = False
 
 	def render(self, surface):
-		surface.blit(self.textObj, self.textRect)
+		if not self.debug:
+			surface.blit(self.textObj, self.textRect)
+		else:
+			pygame.draw.rect(surface, (255,255,255), self.textRect)
 
 	def refresh(self):
 		self.font = pygame.font.Font(self.p, self.size)
 		self.textObj = self.font.render(self.text, True, (255,255,255))
-		self.textRect  = pygame.Rect(self.pos, (self.textObj.get_rect().height, self.textObj.get_rect().width))
+		self.textRect  = pygame.Rect(self.pos, (self.textObj.get_rect().width, self.textObj.get_rect().height))
 
 class Widget:
 	def __init__(self):

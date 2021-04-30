@@ -11,9 +11,12 @@ clock = pygame.time.Clock()
 
 Bruh = False
 
+def action(self):
+	print(self.text)
+
 cursor = Cursor(r"./textures/cursors/Normal.png", r"./textures/cursors/MouseClick/", Window)
 
-editText = EditText((100, 100), 2, "Bruh")
+editText = EditText((100, 100), 1, "Bruh")
 
 pygame.mouse.set_visible(False)
 while not Bruh:
@@ -27,6 +30,6 @@ while not Bruh:
 				print(pygame.mouse.get_pos())
 
 	Window.fill((0,0,0))
-	editText.update(Window)
+	editText.update(events, Window)
 	cursor.update(events)
 	pygame.display.flip()
