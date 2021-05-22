@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"ren",
+				"renderX"
+			],
+			[
+				"obj",
+				"objectsAlongY"
+			],
+			[
+				"redn",
+				"renderY"
+			],
+			[
+				"sur",
+				"surface"
+			],
+			[
+				"self",
+				"self.objectsAlongY"
+			],
+			[
+				"ob",
+				"objects"
+			],
+			[
+				"render",
+				"renderX"
+			],
+			[
+				"Sprite",
+				"SpriteShape"
+			],
+			[
 				"text",
 				"textPointer"
 			],
@@ -50,10 +82,6 @@
 			[
 				"get",
 				"get_rect"
-			],
-			[
-				"sur",
-				"surRect"
 			],
 			[
 				"tetx",
@@ -110,14 +138,6 @@
 			[
 				"Sc",
 				"SceneManager"
-			],
-			[
-				"ob",
-				"objects〔variable〕"
-			],
-			[
-				"obj",
-				"objects"
 			],
 			[
 				"li",
@@ -494,26 +514,6 @@
 			[
 				"Get",
 				"GetBasicData"
-			],
-			[
-				"body",
-				"bodyContent〔variable〕"
-			],
-			[
-				"bo",
-				"bodyE〔variable〕"
-			],
-			[
-				"I",
-				"ImgGen"
-			],
-			[
-				"csv",
-				"csv_file〔variable〕"
-			],
-			[
-				"T",
-				"True"
 			]
 		]
 	},
@@ -589,14 +589,18 @@
 	},
 	"file_history":
 	[
-		"/F/Beethoven/Projects/Python/Texture Pack maker/widgets/Label.py",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/widgets/Button.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/utils/widgets.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/utils/ImageMask.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/utils/funcs.py",
+		"/F/Beethoven/Minecraft/Texture Packs/SammyFault 1.8.9/assets/minecraft/textures/blocks/wool_colored_white.png",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/RoughNote.py",
+		"/F/Beethoven/Minecraft/Texture Packs/wool/CTM WOOL/ctm/full.py",
+		"/F/Beethoven/Minecraft/Texture Packs/wool/CTM WOOL/RunCTM.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/RunCTM.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/widgets/Label.py",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/Scene/SceneManager.py",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/Scene/Scene.py",
-		"/F/Beethoven/Projects/Python/Texture Pack maker/utils/ImageMask.py",
-		"/F/Beethoven/Projects/Python/Texture Pack maker/RoughNote.py",
-		"/F/Beethoven/Projects/Python/Texture Pack maker/utils/funcs.py",
-		"/F/Beethoven/Projects/Python/Texture Pack maker/utils/widgets.py",
 		"/F/Unsorted/Python Projects/Chess AI/board.py",
 		"/F/Unsorted/Python Projects/Chess AI/square.py",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/ctm.py",
@@ -712,15 +716,11 @@
 		"/F/Emulator/CHIP-8/C/dissassemble.c",
 		"/F/Emulator/CHIP-8/ROMS/BC_test-1.ch8",
 		"/H/grab_asap.bat",
-		"/H/grab.bat",
-		"/H/Projects/WG/good-app-no-virus/wifi_asap.py",
-		"/H/Projects/WG/good-app-no-virus/animation.py",
-		"/H/Projects/WG/good-app-no-virus/wifi password.py",
-		"/F/Algorithms/arch.py"
+		"/H/grab.bat"
 	],
 	"find":
 	{
-		"height": 41.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -734,6 +734,22 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"splineAsset",
+			"140",
+			"objlength",
+			"height",
+			"length",
+			"height",
+			"objLength",
+			"self.xObjects",
+			"update",
+			"width",
+			"Image.open",
+			"topRight",
+			"top",
+			"SpriteShapeAsset",
+			"Clicked",
+			"right",
 			"obj",
 			"    ",
 			".debug",
@@ -836,6 +852,11 @@
 		"regex": true,
 		"replace_history":
 		[
+			"Asset",
+			"objLength",
+			"self.objects",
+			"height",
+			"pygame.image.load",
 			"\t",
 			"height",
 			"length",
@@ -853,7 +874,7 @@
 	},
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 32.0
 	},
 	"input":
 	{
@@ -884,7 +905,7 @@
 	"menu_visible": false,
 	"output.exec":
 	{
-		"height": 296.0
+		"height": 450.0
 	},
 	"output.find_results":
 	{
@@ -901,7 +922,7 @@
 	"pinned_build_system": "",
 	"replace":
 	{
-		"height": 73.0
+		"height": 75.2
 	},
 	"save_all_on_build": true,
 	"select_file":

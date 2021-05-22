@@ -68,6 +68,21 @@ def genProps(sides, name, p_id, path, tiles, method, metadata):
 		pass
 	f.close()
 
+def AnimationMcMeta(frameTime, fPath):
+	f = open(fPath, "w")
+	tabRes = ""
+	content = "{"
+	tabRes += "\t"
+	content += tabRes
+	content += f"\"animation\":"
+	tabRes += "\t"
+	content += tabRes + f"\"frametime\":{frameTime}" if frametime != 0 else ""
+	content += "}"
+	content += "}"
+
+	f.write(content)
+	f.close()
+
 class Map():
 	def __init__(self, pattern = [
 			[1,1,1],

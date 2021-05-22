@@ -28,6 +28,25 @@ class Material:
 	def __repr__(self):
 		return f"\"Texture\" : {self.t}\n\"Color\" : {self.c}\n\"Transparency\" : {self.transp}"
 
+class SpriteShapeAsset:
+	def __init__(self, topLeft, top, topRight, bottomLeft, bottom, bottomRight, left, center, right, offsets):
+		self._top = (pygame.image.load(topLeft), pygame.image.load(top), pygame.image.load(topRight))
+		self._center = (pygame.image.load(left), pygame.image.load(center), pygame.image.load(right))
+		self._bottom = (pygame.image.load(bottomLeft), pygame.image.load(bottom), pygame.image.load(bottomRight))
+		self.offsets = offsets
+
+	@property
+	def top(self):
+		return self._top
+	
+	@property
+	def center(self):
+		return self._center
+
+	@property
+	def bottom(self):
+		return self._bottom
+
 class Circle:
 	def __init__(self, radius, pos, mat):
 		self.r = radius
@@ -172,9 +191,198 @@ class Text:
 		self.textObj = self.font.render(self.text, True, (255,255,255))
 		self.textRect  = pygame.Rect(self.pos, (self.textObj.get_rect().width, self.textObj.get_rect().height))
 
+class SpriteShape():
+	def __init__(self, length, height, Asset, objheight, objLength, pos):
+		self.length = length
+		self.height = height
+		self.objheight = objheight
+		self.objLength = objLength
+		self.Asset = Asset
+		self.pos = pos
+		self.type = "SpriteShape"
+		self.update = False
+
+		self.objectsAlongX = self.length // self.objLength if self.length != self.objLength else 3
+		self.objectsAlongXremains = self.length % self.objLength
+		self.objectsAlongY = self.height // self.objheight if self.height != self.objheight else 3
+		self.objectsAlongYremains = self.height % self.objheight
+
+		self.renderX = 0
+		self.renderY = 0
+
+		self.DEBUG = False
+
+		self.cache = pygame.Surface((length, height))
+
+		self.objects = []
+
+	def refresh(self):
+		# print(self.objheight, self.objLength, self.length, self.height)
+		self.cache = pygame.Surface((self.objLength, self.objheight))
+
+		self.objectsAlongX = self.objLength // self.length+2
+		self.objectsAlongX = self.objectsAlongX if self.objectsAlongX != 1 else 3
+
+		self.objectsAlongXremains = self.length % self.objLength
+
+		self.objectsAlongY = self.objheight // self.height+2
+		self.objectsAlongY = self.objectsAlongY if self.objectsAlongY != 1 else 3
+
+		self.objectsAlongYremains = self.objheight % self.height
+
+		self.update = True
+
+		self.objects = []
+		for y in range(self.objectsAlongY):
+			tempX = []
+			for x in range(self.objectsAlongX):
+				if y == 0:
+					if x == 0:
+						tempX.append(self.Asset.top[0])
+					elif x == self.objectsAlongX-1:
+						tempX.append(self.Asset.top[2])
+					else:
+						tempX.append(self.Asset.top[1])
+				elif y == self.objectsAlongY-1:
+					if x == 0:
+						tempX.append(self.Asset.bottom[0])
+					elif x == self.objectsAlongX-1:
+						tempX.append(self.Asset.bottom[2])
+					else:
+						tempX.append(self.Asset.bottom[1])
+				else:
+					if x == 0:
+						tempX.append(self.Asset.center[0])
+					elif x == self.objectsAlongX-1:
+						tempX.append(self.Asset.center[2])
+					else:
+						tempX.append(self.Asset.center[1])									
+
+			self.objects.append(tempX)
+		# print(self.objLength, self.objheight)
+		# print(self.objects)
+
+	def render(self, surface):
+		self.renderX = 0
+		self.renderY = 0
+		# print(self.objectsAlongY+self.objectsAlongX)
+		for y, indY in zip(self.objects, range(len(self.objects))):
+			lenY = len(self.objects)
+			# self.renderX = 0
+			# self.renderY = 0
+
+			for x, indX in zip(y, range(len(y))):
+				lenX = len(y)
+				print(lenX, lenY, indX, indY, self.objectsAlongX, self.objectsAlongY)
+				if indY == 0:
+					if indX == 0:
+						aX = self.Asset.offsets["TL"][0]
+						aY = self.Asset.offsets["TL"][1]
+
+						self.cache.blit(x, (self.renderX, self.renderY))
+						print("TL", (self.renderX, self.renderY), (aX, aY))
+
+						self.renderX += aX
+						# self.renderY += aY
+						
+
+					elif indX+1 == self.objectsAlongX:
+						aX = self.Asset.offsets["TR"][0]
+						aY = self.Asset.offsets["TR"][1]
+						print("TR", (self.renderX, self.renderY), (aX, aY))
+
+						# self.renderX += aX
+
+						self.cache.blit(x, (self.renderX, self.renderY))
+						self.renderY += aY
+
+					else:
+						aX = self.Asset.offsets["T"][0]
+						aY = self.Asset.offsets["T"][1]
+
+						self.cache.blit(x, (self.renderX, self.renderY))
+
+						print("T", (self.renderX, self.renderY), (aX, aY))
+
+						self.renderX += aX
+						# self.renderY += aY
+						
+				elif indY != self.objectsAlongY-1:
+					if indX == 0:
+						self.renderX = 0
+						aX = self.Asset.offsets["L"][0]
+						aY = self.Asset.offsets["L"][1]
+
+						self.cache.blit(x, (self.renderX, self.renderY))
+
+						print("L", (self.renderX, self.renderY), (aX, aY))
+
+						self.renderX += aX
+						# self.renderY += aY
+
+
+					elif indX+1 == self.objectsAlongX:
+						self.renderX = 0
+						aX = self.Asset.offsets["R"][0]
+						aY = self.Asset.offsets["R"][1]
+
+						self.cache.blit(x, (self.renderX, self.renderY))
+						print("R", (self.renderX, self.renderY), (aX, aY))
+						self.renderX += aX
+						self.renderY += aY
+
+					else:
+						aX = self.Asset.offsets["C"][0]
+						aY = self.Asset.offsets["C"][1]
+
+						self.cache.blit(x, (self.renderX, self.renderY))
+						print("C", (self.renderX, self.renderY), (aX, aY))
+						self.renderX += aX
+						# self.renderY += aY
+
+				else:
+					if indX == 0:
+						self.renderX = 0
+						aX = self.Asset.offsets["BL"][0]
+						aY = self.Asset.offsets["BL"][1]
+						print("BL", (self.renderX, self.renderY), (aX, aY))
+						self.renderX += aX
+						# self.renderY += aY
+
+						self.cache.blit(x, (self.renderX, self.renderY))
+
+
+					elif indX+1 == self.objectsAlongX:
+						aX = self.Asset.offsets["BR"][0]
+						aY = self.Asset.offsets["BR"][1]
+
+						self.cache.blit(x, (self.renderX, self.renderY))
+						print("BR", (self.renderX, self.renderY), (aX, aY))
+						self.renderX += aX
+						self.renderY += aY
+
+					else:
+						aX = self.Asset.offsets["B"][0]
+						aY = self.Asset.offsets["B"][1]
+
+						self.cache.blit(x, (self.renderX, self.renderY))
+						print("B", (self.renderX, self.renderY), (aX, aY))
+						self.renderX += aX
+						# self.renderY += aY
+
+
+		print((self.renderX, self.renderY))
+		print("_________________________________\nRENDER CYCLE COMPLETE\n_________________________________")
+
+		surface.blit(self.cache, self.pos)
+
+		self.update = False
+
 class Widget:
 	def __init__(self):
 		pass
 	def render(self, surface):
 		for obj in self.objects:
 			obj.render(surface)
+
+

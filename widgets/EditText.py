@@ -2,6 +2,40 @@ from utils.ImageMask import *
 from utils.widgets import *
 from utils.funcs import *
 
+ClickedSpriteShape = SpriteShapeAsset(
+	"./textures/widgets/Edit Text/Clicked/tL.png", 
+	"./textures/widgets/Edit Text/Clicked/t.png", 
+	"./textures/widgets/Edit Text/Clicked/tR.png", 
+	"./textures/widgets/Edit Text/Clicked/bL.png", 
+	"./textures/widgets/Edit Text/Clicked/b.png", 
+	"./textures/widgets/Edit Text/Clicked/bR.png", 
+	"./textures/widgets/Edit Text/Clicked/l.png", 
+	"./textures/widgets/Edit Text/Clicked/c.png", 
+	"./textures/widgets/Edit Text/Clicked/r.png",
+	{"TL":(4,4),
+	 "T":(92,3),
+	 "TR":(4,4),
+	 "BL":(4,4),
+	 "B":(92,3),
+	 "BR":(4,4),
+	 "L":(4,22),
+	 "C":(92,24),
+	 "R":(4,22)})
+NotClickedSpriteShape = SpriteShapeAsset(
+	"./textures/widgets/Edit Text/Not Clicked/tL.png", 
+	"./textures/widgets/Edit Text/Not Clicked/t.png", 
+	"./textures/widgets/Edit Text/Not Clicked/tR.png", 
+	"./textures/widgets/Edit Text/Not Clicked/bL.png", 
+	"./textures/widgets/Edit Text/Not Clicked/b.png", 
+	"./textures/widgets/Edit Text/Not Clicked/bR.png", 
+	"./textures/widgets/Edit Text/Not Clicked/l.png", 
+	"./textures/widgets/Edit Text/Not Clicked/c.png", 
+	"./textures/widgets/Edit Text/Not Clicked/r.png",
+	{"TL":(4,4),"T":(92,3),"TR":(4,4),
+	 "BL":(4,4),"B":(92,3),"BR":(4,4),
+	 "L":(4,22),"C":(92,24),"R":(4,22)
+	})
+
 class EditText(Widget):
 	def __init__(self, pos, size, text):
 		self.pos = pos
@@ -11,7 +45,7 @@ class EditText(Widget):
 		self.visible = True
 		self.state = "Not Clicked"		
 		self.objects = [
-		Rect(100*size, 30*size, pos, Material((0,0,0), Image.open("./textures/widgets/LabelBG.png"))),
+		SpriteShape(100, 30, NotClickedSpriteShape, 100*size, 30*size,pos),
 		Text(self.text,'./textures/16x.ttf', self.size*8, [pos[0]+8, pos[1]+8]),
 		]
 		self.UpdatedDimensions = [100*size, 30*size]
@@ -34,9 +68,9 @@ class EditText(Widget):
 	def updateTextures(self, state):
 		self.state = state
 		if state == "Clicked":
-			self.objects[0] = Rect(100*self.size, 30*self.size, self.pos, Material((0,0,0), Image.open("./textures/widgets/TextEditClicked.png")))
+			self.objects[0] = SpriteShape(100*self.size, 30*self.size,ClickedSpriteShape, 100*self.size, 30*self.size,self.pos)
 		if state == "Not Clicked":
-			self.objects[0] = Rect(100*self.size, 30*self.size, self.pos, Material((0,0,0), Image.open("./textures/widgets/LabelBG.png")))
+			self.objects[0] = SpriteShape(100*self.size, 30*self.size, NotClickedSpriteShape, 100*self.size, 30*self.size,self.pos),
 
 	def refreshBG(self, factor):
 		text = self.objects[1]
@@ -49,9 +83,9 @@ class EditText(Widget):
 		if self.state == "Clicked":
 			bg, text, textPointer = self.objects
 
-			bg.p = (0,0)
-			bg.a = self.UpdatedDimensions[0]
-			bg.b = self.UpdatedDimensions[1]
+			bg.objLength = self.UpdatedDimensions[0]
+			bg.objheight = self.UpdatedDimensions[1]
+			# bg.DEBUG = True
 			bg.refresh()
 
 			self.pointerPos = [text.textRect.right, text.pos[1]]
@@ -61,35 +95,31 @@ class EditText(Widget):
 			textPointer.p = (self.pointerPos[0], self.pointerPos[1])
 			textPointer.scaleTranspTexture((textPointer.a, textPointer.b))
 
-			# bg.debug = True
+			bg.render(surface)
 
-			dest = Surface(self.baseDimensions)
-			surRect = surface.get_rect()
-			bg.render(dest)
-
-			scaledSurface = pygame.transform.scale(dest, self.UpdatedDimensions)
-			scaledRect = pygame.Rect(self.pos, self.UpdatedDimensions)
-
-			surface.blit(scaledSurface, scaledRect)
 			self.objects = [bg, text, textPointer]
 			text.render(surface)
 			textPointer.render(surface)
 
 		else:
 			bg, text = self.objects
-			bg.p = (0,0)
-			bg.a = self.UpdatedDimensions[0]
-			bg.b = self.UpdatedDimensions[1]
-			bg.refresh()
-			# bg.debug = True
 
-			dest = Surface(self.baseDimensions)
-			bg.render(dest)
+			try:
+				bg.objLength = self.UpdatedDimensions[0]
+				bg.objheight = self.UpdatedDimensions[1]
+				bg.DEBUG = True
+				bg.refresh()
 
-			scaledSurface = pygame.transform.scale(dest, self.UpdatedDimensions)
-			scaledRect = pygame.Rect(self.pos, self.UpdatedDimensions)
+				bg.render(surface)
+			except:
+				bg = bg[0]
+				bg.objLength = self.UpdatedDimensions[0]
+				bg.objheight = self.UpdatedDimensions[1]
+				# bg.DEBUG = True
+				bg.refresh()
 
-			surface.blit(scaledSurface, scaledRect)			
+				bg.render(surface)				
+
 			self.objects = [bg, text]
 			
 			text.render(surface)

@@ -15,8 +15,10 @@ def action(self):
 	print(self.text)
 
 cursor = Cursor(r"./textures/cursors/Normal.png", r"./textures/cursors/MouseClick/", Window)
-
+	
 editText = EditText((100, 100), 1, "Bruh")
+
+pygame.key.set_repeat(1,100)
 
 pygame.mouse.set_visible(False)
 while not Bruh:
@@ -25,9 +27,6 @@ while not Bruh:
 	for event in events:
 		if event.type == pygame.QUIT:
 			Bruh = True
-		if event.type == pygame.KEYDOWN:
-			if event.key == pygame.K_RETURN:
-				print(pygame.mouse.get_pos())
 
 	Window.fill((0,0,0))
 	editText.update(events, Window)
