@@ -1,0 +1,995 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Hover",
+				"HoveredSpriteShape〔variable〕"
+			],
+			[
+				"sta",
+				"stateA〔variable〕"
+			],
+			[
+				"NotC",
+				"NotClickedItemSpriteShape〔variable〕"
+			],
+			[
+				"up",
+				"updateTextures"
+			],
+			[
+				"obj",
+				"objects"
+			],
+			[
+				"D",
+				"DropdownOption"
+			],
+			[
+				"text",
+				"textRect"
+			],
+			[
+				"Not",
+				"NotClickedSpriteShape〔variable〕"
+			],
+			[
+				"render",
+				"renderX〔variable〕"
+			],
+			[
+				"en",
+				"endPos〔variable〕"
+			],
+			[
+				"Pix",
+				"PixelSize"
+			],
+			[
+				"pixel",
+				"pixelIndex"
+			],
+			[
+				"ren",
+				"renderY〔variable〕"
+			],
+			[
+				"pi",
+				"pixelEditor〔variable〕"
+			],
+			[
+				"rend",
+				"renderY"
+			],
+			[
+				"set",
+				"setPixel"
+			],
+			[
+				"s",
+				"setAlphaPixel〔function〕"
+			],
+			[
+				"thr",
+				"threading〔module〕"
+			],
+			[
+				"str",
+				"stripedList〔variable〕"
+			],
+			[
+				"ind",
+				"indY"
+			],
+			[
+				"inde",
+				"indexes"
+			],
+			[
+				"dra",
+				"drawFlag"
+			],
+			[
+				"Pi",
+				"PixelSize"
+			],
+			[
+				"pixle",
+				"pixelEditor"
+			],
+			[
+				"Pixle",
+				"PixelID〔class〕"
+			],
+			[
+				"C",
+				"ClickedSpriteShape"
+			],
+			[
+				"event",
+				"eventFuncs"
+			],
+			[
+				"eve",
+				"eventFuncs"
+			],
+			[
+				"cal",
+				"calcOBJS〔function〕"
+			],
+			[
+				"obje",
+				"objectsAlongX〔variable〕"
+			],
+			[
+				"object",
+				"objectsAlongX"
+			],
+			[
+				"objects",
+				"objectsAlongXremains"
+			],
+			[
+				"lock",
+				"lockedOnes"
+			],
+			[
+				"bo",
+				"bottom〔variable〕"
+			],
+			[
+				"bot",
+				"bottomRight〔variable〕"
+			],
+			[
+				"top",
+				"topRight〔variable〕"
+			],
+			[
+				"ctm",
+				"ctmImages〔variable〕"
+			],
+			[
+				"get",
+				"getPixels"
+			],
+			[
+				"clear",
+				"clearImage〔variable〕"
+			],
+			[
+				"redn",
+				"renderY"
+			],
+			[
+				"sur",
+				"surface"
+			],
+			[
+				"self",
+				"self.objectsAlongY"
+			],
+			[
+				"ob",
+				"objects"
+			],
+			[
+				"Sprite",
+				"SpriteShape"
+			],
+			[
+				"re",
+				"refresh"
+			],
+			[
+				"Text",
+				"Texture"
+			],
+			[
+				"update",
+				"update〔function〕"
+			],
+			[
+				"get_",
+				"get_rect"
+			],
+			[
+				"t",
+				"textRect"
+			],
+			[
+				"te",
+				"textPointer〔variable〕"
+			],
+			[
+				"tex",
+				"textPointer"
+			],
+			[
+				"su",
+				"surfaceTexture〔variable〕"
+			],
+			[
+				"sc",
+				"scaledtP〔variable〕"
+			],
+			[
+				"tetx",
+				"textPointer"
+			],
+			[
+				"len",
+				"length〔variable〕"
+			],
+			[
+				"tet",
+				"textRect"
+			],
+			[
+				"tr",
+				"transp"
+			],
+			[
+				"po",
+				"pointerPos〔variable〕"
+			],
+			[
+				"cu",
+				"cursor"
+			],
+			[
+				"st",
+				"startAnim〔variable〕"
+			],
+			[
+				"B",
+				"Button"
+			],
+			[
+				"c",
+				"cImage〔variable〕"
+			],
+			[
+				"cli",
+				"clickAnim〔argument〕"
+			],
+			[
+				"ene",
+				"enabled"
+			],
+			[
+				"cl",
+				"clickAnim"
+			],
+			[
+				"Sc",
+				"SceneManager"
+			],
+			[
+				"li",
+				"listBruh〔variable〕"
+			],
+			[
+				"lis",
+				"listBruh"
+			],
+			[
+				"scal",
+				"scaledSurface〔variable〕"
+			],
+			[
+				"de",
+				"dest〔variable〕"
+			],
+			[
+				"o",
+				"objects"
+			],
+			[
+				"P",
+				"PilImage〔variable〕"
+			],
+			[
+				"u",
+				"UpdatedDimensions〔variable〕"
+			],
+			[
+				"Bu",
+				"ButtonObject〔argument〕"
+			],
+			[
+				"Button",
+				"ButtonObject〔argument〕"
+			],
+			[
+				"Butt",
+				"ButtonPress〔class〕"
+			],
+			[
+				"m",
+				"mClicked"
+			],
+			[
+				"async",
+				"asyncio"
+			],
+			[
+				"Ma",
+				"Material〔class〕"
+			],
+			[
+				"ma",
+				"maskedSurface"
+			],
+			[
+				"Mask",
+				"MaskImage"
+			],
+			[
+				"py",
+				"pygameSurface〔variable〕"
+			],
+			[
+				"rer",
+				"return〔keyword〕"
+			],
+			[
+				"pro",
+				"property\tNew Property"
+			],
+			[
+				"im",
+				"imgdata〔variable〕"
+			],
+			[
+				"from",
+				"fromarray〔function〕"
+			],
+			[
+				"lum",
+				"lum_img_arr"
+			],
+			[
+				"cr",
+				"croppedImage〔variable〕"
+			],
+			[
+				"p_",
+				"p_title"
+			],
+			[
+				"io",
+				"iostream\tstandard header"
+			],
+			[
+				"l",
+				"lSDL2"
+			],
+			[
+				"scr",
+				"scroll_y〔variable〕"
+			],
+			[
+				"mou",
+				"mouseLocation〔variable〕"
+			],
+			[
+				"dr",
+				"drawPixel〔function〕"
+			],
+			[
+				"pygame",
+				"pygame.mouse.get_pressed"
+			],
+			[
+				"wid",
+				"widget"
+			],
+			[
+				"widgt",
+				"widget"
+			],
+			[
+				"widgte",
+				"widgets"
+			],
+			[
+				"widget",
+				"widgets"
+			],
+			[
+				"A",
+				"Arg"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"data",
+				"dataType〔variable〕"
+			],
+			[
+				"dat",
+				"dataType〔variable〕"
+			],
+			[
+				"try",
+				"try\tTry/Except/Finally"
+			],
+			[
+				"float",
+				"floatInt〔variable〕"
+			],
+			[
+				"int",
+				"integer〔variable〕"
+			],
+			[
+				"func",
+				"function〔variable〕"
+			],
+			[
+				"run",
+				"runtime〔variable〕"
+			],
+			[
+				"runt",
+				"runtimeFunctions〔variable〕"
+			],
+			[
+				"V",
+				"VarVal"
+			],
+			[
+				"funct",
+				"functionList〔variable〕"
+			],
+			[
+				"Func",
+				"Function"
+			],
+			[
+				"Var",
+				"VarName〔variable〕"
+			],
+			[
+				"Va",
+				"VarVal〔variable〕"
+			],
+			[
+				"Arg",
+				"Arg0"
+			],
+			[
+				"AR",
+				"Arg0"
+			],
+			[
+				"ke",
+				"keyword〔variable〕"
+			],
+			[
+				"add",
+				"addFunc〔variable〕"
+			],
+			[
+				"fun",
+				"functionName〔variable〕"
+			],
+			[
+				"splt",
+				"split"
+			],
+			[
+				"du",
+				"dumps〔function〕"
+			],
+			[
+				"in",
+				"inputText〔variable〕"
+			],
+			[
+				"_",
+				"_Widget"
+			],
+			[
+				"Op",
+				"OpenFile"
+			],
+			[
+				"New",
+				"NewFile"
+			],
+			[
+				"if",
+				"ifmain\tif __name__ == '__main__'"
+			],
+			[
+				"F",
+				"FontSize"
+			],
+			[
+				"fotn",
+				"fontSize〔variable〕"
+			]
+		]
+	},
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pacakge Control",
+				"Package Control: Remove Package"
+			],
+			[
+				"remot",
+				"Remote: Disconnect from Session"
+			],
+			[
+				"remoote",
+				"Remote: Disconnect from Session"
+			],
+			[
+				"ip",
+				"Package Control: Install Package"
+			],
+			[
+				"package re",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"er",
+				"Emmet: Remove Tag"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"LiveReload: Enable/disable plugins",
+				"LiveReload: Enable/disable plug-ins"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 158.0,
+		"history":
+		[
+			"view.run_command(\"start_session\")"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/ui/Button.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/ui/EditText.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/widgetUtils.py",
+		"/F/Beethoven/Minecraft/Texture Packs/Shengling/assets/minecraft/optifine/ctm/ores/diamond/z0.properties",
+		"/F/Beethoven/Minecraft/Texture Packs/Shengling/assets/minecraft/optifine/ctm/ores/diamond/3_e.png",
+		"/F/Beethoven/Minecraft/Texture Packs/Shengling/pack.mcmeta",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/textures/widgets/Dropdown Open.png",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/funcs.py",
+		"/F/Unsorted/Python Projects/Chess AI/board.py",
+		"/F/Unsorted/Python Projects/OWN/CHIP8.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/ctm/CTM.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/Image.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/ctm/genFiles.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.1/RoughNote.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.1/widgets/EditText.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/debug",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/textures/widgets/Edit Text/Clicked/c.png",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/ui/Cursor.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/Mask.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/main.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/ui/Label.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.1/cursor.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.1/main.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/widgets.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.1/utils/funcs.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.1/utils/ImageMask.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.1/utils/widgets.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/LICENSE",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.1/ctm/full.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.1/RunCTM.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.1/ctm/Constants.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.1/ctm/utils.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/widgets/Button.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/utils/widgets.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/utils/ImageMask.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/utils/funcs.py",
+		"/F/Beethoven/Minecraft/Texture Packs/SammyFault 1.8.9/assets/minecraft/textures/blocks/wool_colored_white.png",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/RoughNote.py",
+		"/F/Beethoven/Minecraft/Texture Packs/wool/CTM WOOL/ctm/full.py",
+		"/F/Beethoven/Minecraft/Texture Packs/wool/CTM WOOL/RunCTM.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/RunCTM.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/widgets/Label.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/Scene/SceneManager.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/Scene/Scene.py",
+		"/F/Unsorted/Python Projects/Chess AI/square.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/ctm.py",
+		"/F/Beethoven/Minecraft/Texture Packs/Animated Bliss Temp/Wool/Aqua/wool.properties",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/ids/data_1.8.txt",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/ids/data_1.11.txt",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/ids/data_1.10.txt",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/main.py",
+		"/F/Unsorted/Algorithms/dictionary.py",
+		"/F/Python Projects/Texture Pack maker/main.py",
+		"/F/Python Projects/Texture Pack maker/utils/widgets.py",
+		"/F/C Triplets Projects/C++/Texture Pack Maker/TexturePackMaker.sublime-workspace",
+		"/F/SDL/Tutorial/tutorial.sublime-project",
+		"/F/SDL/test.py",
+		"/F/Devs Dos/Sublime Text/Data/Packages/Default/exec.py",
+		"/F/Python Projects/Pixel Editor/zoomLengths.json",
+		"/F/Python Projects/Pixel Editor/RoughNote.py",
+		"/F/Algorithms/dictionary.py",
+		"/F/Python Projects/Mesh Generation with python and perlin noise/HeightMap.py",
+		"/F/Python Projects/Python Minecraft Ursina/main.py",
+		"/C/Users/George/AppData/Roaming/.minecraft/webcache/Cache/f_000004",
+		"/F/Python Projects/RoughNotes/TextEditorRoughNote.py",
+		"/C/Users/George/Procedural",
+		"/C/Users/George/Procedural Terrain Generaion/Terrain",
+		"/C/Users/George/Procedural Terrain Generaion/Generaion/Assets/Scripts/Noise.cs",
+		"/C/Users/George/Procedural Terrain Generaion/ProceduralTerrainGeneration.sublime-project",
+		"/F/Python Minecraft Ursina/main.py",
+		"/C/Users/George/Pictures/10.py",
+		"/F/decode.json",
+		"/F/Joab's crappy encrytion.py",
+		"/C/Users/George/Pictures/secret_msg_decoder_and_encoder.py",
+		"/F/Python Minecraft/Testing/Block.py",
+		"/F/Python Minecraft/BlockData.py",
+		"/F/Python Minecraft/Faithful/pack.mcmeta",
+		"/F/Python Minecraft/openPGM.py",
+		"/F/socketswifipy.py",
+		"/F/Randomizer/loot_tables/blocks/acacia_button.json",
+		"/C/Users/George/Pictures/test.py",
+		"/C/Users/George/AppData/Roaming/.minecraft/launcher_profiles.json",
+		"/C/Users/George/AppData/Roaming/.minecraft/launcher_accounts.json",
+		"/C/Users/George/Documents/Pokedex/PokemonNames.txt",
+		"/C/Users/George/Documents/Pokedex/Data/Pokemon/Bayleef.json",
+		"/C/Users/George/Documents/Pokedex/Data/Pokemon/Bastiodon.json",
+		"/C/Users/George/Documents/Pokedex/Data/Pokemon/Data.json",
+		"/F/Pokedex/HTML Dat/sample.html",
+		"/F/Pokedex/HTML Dat/bData.txt",
+		"/F/roughNote.py",
+		"/F/Pokedex/DataExtract.py",
+		"/F/Pokedex/TypeEffectiveness.json",
+		"/F/Pokedex/HTML_Analyze.py",
+		"/F/Pokedex/PokemonNames.txt",
+		"/F/image text/whatsapp automation.py",
+		"//DESKTOP-O9MKOTI/4 Beethu/Fin/1/CHIP8.py",
+		"/F/CHIP-8/CHIP8.py",
+		"/F/Chip8Python-master/chip8/cpu.py",
+		"/F/Emulator/Python/CHIP-8/BlinkingBox.ch8",
+		"/F/AOC/Day3.input",
+		"/F/AOC/Day3.py",
+		"/F/AOC/Day2.input",
+		"/F/AOC/Day1.py",
+		"/F/AOC/Day2.py",
+		"/F/AOC/Day1.input",
+		"/F/Discord Bot/RoughNote.py",
+		"/F/sockets/server.py",
+		"/F/sockets/UserInfo.txt",
+		"/F/sockets/test.py",
+		"/F/sockets/client.py",
+		"/F/Public socket/client.py",
+		"/F/Projects/RPS/comms.py",
+		"/F/Projects/RPS/script.py",
+		"/F/Projects/RPS/project.py",
+		"/F/Projects/RPS/MAIN.RPS",
+		"/F/Projects/RPS/main.py",
+		"/F/Projects/RPS/conf/onORoff.yaml",
+		"/F/Projects/RPS/utils.py",
+		"/F/Projects/RPS/conf/COMMS.yaml",
+		"/F/Projects/RPS/TEST_01/config.yaml",
+		"/F/Projects/RPS/config.py",
+		"/F/Projects/RPS/projects.py",
+		"/F/Projects/RPS/parser.py",
+		"/F/Projects/RPS/eval.py",
+		"/F/Projects/RPS/exec.py",
+		"/F/Projects/RPS/TEST_01/main.rps",
+		"/F/Discord Bot/roles.json",
+		"/F/Discord Bot/spyfall.py"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"stateA",
+			"HoveredSpriteShape",
+			"self.state == \"Clicked\"",
+			"text",
+			"def",
+			"default",
+			"text",
+			"Dropdown",
+			"Button",
+			"DropdoBUttonwn",
+			"mPos",
+			"rank",
+			"file",
+			"255",
+			"indexes",
+			"indices",
+			"color",
+			"scale",
+			"Pixelcolor",
+			"surface",
+			"None",
+			"baseDimensions",
+			"Not Clicked",
+			"Edit Text",
+			")\n",
+			"Func",
+			"    ",
+			".size",
+			"yremains",
+			"xremains",
+			"objectsAlongY",
+			"objectsAlongX",
+			"30",
+			"#",
+			"273",
+			"objectsAlongY",
+			"objectsAlongX",
+			"length",
+			"height",
+			"self.",
+			"T (4, 0) (92, 3)",
+			"))\n",
+			"+= aY",
+			"tupleRange",
+			"getpixel",
+			"self.",
+			"Map",
+			"splineAsset",
+			"140",
+			"objlength",
+			"height",
+			"length",
+			"height",
+			"objLength",
+			"self.xObjects",
+			"update",
+			"width",
+			"Image.open",
+			"topRight",
+			"top",
+			"SpriteShapeAsset",
+			"Clicked",
+			"right",
+			"obj",
+			"    ",
+			".debug",
+			"transparency",
+			"Texture",
+			"400",
+			"300",
+			"400",
+			"Bruh",
+			"textObj",
+			"cursor",
+			"RED",
+			"Bruh",
+			"height",
+			"length",
+			"100",
+			"bg",
+			"textPointer",
+			"eplison",
+			"right",
+			"left",
+			"right",
+			"length",
+			"textPointer.render(surface)",
+			"textPointer",
+			"pointerPos",
+			"png",
+			"length1",
+			"height",
+			"length",
+			"Clicked",
+			"label",
+			"editText",
+			"Label",
+			"EditText",
+			"Label",
+			"from",
+			"250",
+			"400",
+			"300",
+			"200",
+			"HoveringOnClickable",
+			"cur",
+			"length",
+			"textObj",
+			"    ",
+			"lol",
+			"Button",
+			"pass",
+			"clickAnimation",
+			"hidden",
+			"maskedImage",
+			"index",
+			"obj",
+			"append",
+			"500",
+			"dest",
+			"width",
+			"pygame",
+			"Dimensions",
+			"scaledSurface",
+			"100",
+			"surface",
+			"height",
+			"pass"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"pos",
+			"y",
+			"x",
+			"Hovered",
+			"Button",
+			"\t",
+			"Ay",
+			"Ax",
+			"y",
+			"x",
+			"",
+			"getPixel",
+			"",
+			"arrangement",
+			"Asset",
+			"objLength",
+			"self.objects",
+			"height",
+			"pygame.image.load",
+			"\t",
+			"height",
+			"length",
+			"length1",
+			"\t",
+			"visible",
+			"and",
+			"P"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 84.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.exec":
+	{
+		"height": 133.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.stino_build_panel":
+	{
+		"height": 0.0
+	},
+	"output.stino_panel":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"replace":
+	{
+		"height": 73.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 249.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

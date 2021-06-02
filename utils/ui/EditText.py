@@ -47,19 +47,15 @@ class EditText(Widget):
 		self.UpdatedDimensions = [100*size, 30*size]
 		self.baseDimensions = [100, 30]
 		self.Dimensions = [100*size, 30*size]
-		# self.buffer = int(20/size)
 		pointerPos = []
 		ratio = Ratio(3, 10)
 		self.tPRatio = Ratio(10, 30)
 		for obj in self.objects:
-			if obj.type=="Text":				
+			if obj.type=="Text":
 				length = obj.textRect.height+int(20/obj.textRect.height)
-				# height = int(ratio.getRatioFromB(length))
-				# self.UpdatedDimensions[1] = self.UpdatedDimensions[1] + height
 				self.UpdatedDimensions[0] = self.UpdatedDimensions[0] + length
 				obj.refresh()
 				self.pointerPos = [obj.textRect.right, obj.pos[1]]
-		# print(pointerPos)
 		self.textPointer = Rect(10, 20, self.pointerPos, Material((0,0,0), r"./textures/cursors/TextPointer.png", True))
 
 	def updateTextures(self, state):
@@ -74,7 +70,6 @@ class EditText(Widget):
 	def refreshBG(self, factor):
 		text = self.objects[1]
 		length = text.textRect.height*factor
-		# height = int(self.tPRatio.getRatioFromB(length))	
 		self.UpdatedDimensions[1] = self.Dimensions[1]
 		self.UpdatedDimensions[0] += length
 
@@ -84,7 +79,6 @@ class EditText(Widget):
 
 			bg.objLength = self.UpdatedDimensions[0]+40
 			bg.objheight = self.Dimensions[1]
-			# bg.DEBUG = True
 			bg.refresh()
 
 			self.pointerPos = [text.textRect.right, text.pos[1]]
@@ -106,7 +100,6 @@ class EditText(Widget):
 			try:
 				bg.objLength = self.UpdatedDimensions[0]
 				bg.objheight = self.Dimensions[1]
-				# bg.DEBUG = True
 				bg.refresh()
 
 				bg.render(surface)
@@ -114,7 +107,6 @@ class EditText(Widget):
 				bg = bg[0]
 				bg.objLength = self.UpdatedDimensions[0]
 				bg.objheight = self.Dimensions[1]
-				# bg.DEBUG = True
 				bg.refresh()
 
 				bg.render(surface)				

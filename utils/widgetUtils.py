@@ -191,7 +191,7 @@ class Text:
 		self.textObj = self.font.render(self.text, True, (255,255,255))
 		self.textRect  = pygame.Rect(self.pos, (self.textObj.get_rect().width, self.textObj.get_rect().height))
 
-class SpriteShape():
+class SpriteShape:
 	def __init__(self, length, height, Asset, objheight, objLength, pos):
 		self.length = length
 		self.height = height
@@ -215,6 +215,7 @@ class SpriteShape():
 		self.cache = pygame.Surface((length, height))
 
 		self.objects = []
+		self.refresh()
 
 	def refresh(self):
 		self.cache = pygame.Surface((self.objLength, self.objheight))

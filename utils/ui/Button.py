@@ -30,7 +30,6 @@ NotClickedSpriteShape = SpriteShapeAsset(
 	 "BL":(4,4),"B":(92,4),"BR":(4,4),
 	 "L":(4,22),"C":(92,22),"R":(4,22)
 	})
-
 HoveredSpriteShape = SpriteShapeAsset(
 	"./textures/widgets/Button/Hovered/tL.png", 
 	"./textures/widgets/Button/Hovered/t.png", 
@@ -46,8 +45,11 @@ HoveredSpriteShape = SpriteShapeAsset(
 	 "L":(4,22),"C":(92,22),"R":(4,22)
 	})
 
+def defaultAction(self):
+	pass
+
 class Button(Widget):
-	def __init__(self, pos, size, action, text):
+	def __init__(self, pos, size, text, action=defaultAction):
 		self.pos = pos
 		self.size = size
 		self.action = action

@@ -1,6 +1,6 @@
 import pygame
 from utils.ui.cursor import Cursor
-from utils.ui.PixelEditor import *
+from utils.ui.Dropdown import Dropdown
 import numpy as np
 
 pygame.init()
@@ -10,14 +10,15 @@ clock = pygame.time.Clock()
 
 Bruh = False
 
+def action(self, val, ind):
+	print(self.default, val, ind)
+def actionB(self):
+	print(self.text)
+
 cursor = Cursor(r"./textures/cursors/Normal.png", r"./textures/cursors/MouseClick/", Window)
+dropdown = Dropdown((100,100), 1, ["A","B"], "A")
 
-s = 32
-
-editorWindow = PixelEditor(Window, (100,100), size = (s,s))
-editorWindow.refresh()
-
-pygame.key.set_repeat(2,100)
+pygame.key.set_repeat(1,100)
 
 pygame.mouse.set_visible(False)
 while not Bruh:
@@ -28,6 +29,6 @@ while not Bruh:
 			Bruh = True
 
 	Window.fill((0,0,0,255))
-	editorWindow.update(events)
+	dropdown.update(events, Window)
 	cursor.update(events)
 	pygame.display.flip()
