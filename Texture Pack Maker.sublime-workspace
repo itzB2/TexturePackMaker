@@ -4,6 +4,50 @@
 		"selected_items":
 		[
 			[
+				"Grenn",
+				"GreenClickAnim"
+			],
+			[
+				"up",
+				"updateTextures〔function〕"
+			],
+			[
+				"sele",
+				"selected"
+			],
+			[
+				"oj",
+				"objects"
+			],
+			[
+				"Ho",
+				"HoveredItemSpriteShape"
+			],
+			[
+				"opt",
+				"option"
+			],
+			[
+				"Hov",
+				"HoveredItemSpriteShape"
+			],
+			[
+				"Not",
+				"NotClickedItemSpriteShape"
+			],
+			[
+				"text",
+				"textInd"
+			],
+			[
+				"optio",
+				"options"
+			],
+			[
+				"st",
+				"stateA"
+			],
+			[
 				"Hover",
 				"HoveredSpriteShape〔variable〕"
 			],
@@ -16,24 +60,12 @@
 				"NotClickedItemSpriteShape〔variable〕"
 			],
 			[
-				"up",
-				"updateTextures"
-			],
-			[
 				"obj",
 				"objects"
 			],
 			[
 				"D",
 				"DropdownOption"
-			],
-			[
-				"text",
-				"textRect"
-			],
-			[
-				"Not",
-				"NotClickedSpriteShape〔variable〕"
 			],
 			[
 				"render",
@@ -238,10 +270,6 @@
 			[
 				"cu",
 				"cursor"
-			],
-			[
-				"st",
-				"startAnim〔variable〕"
 			],
 			[
 				"B",
@@ -486,34 +514,6 @@
 			[
 				"du",
 				"dumps〔function〕"
-			],
-			[
-				"in",
-				"inputText〔variable〕"
-			],
-			[
-				"_",
-				"_Widget"
-			],
-			[
-				"Op",
-				"OpenFile"
-			],
-			[
-				"New",
-				"NewFile"
-			],
-			[
-				"if",
-				"ifmain\tif __name__ == '__main__'"
-			],
-			[
-				"F",
-				"FontSize"
-			],
-			[
-				"fotn",
-				"fontSize〔variable〕"
 			]
 		]
 	},
@@ -586,8 +586,14 @@
 	},
 	"file_history":
 	[
-		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/ui/Button.py",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/ui/EditText.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/ui/Dropdown.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/ui/Button.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/debug",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/ui/Checkbox.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/textures/widgets/Checkbox/RedAnimation/RedBG6.png",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/textures/widgets/Checkbox/RedAnimation/RedBG1.png",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/ui/Label.py",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/widgetUtils.py",
 		"/F/Beethoven/Minecraft/Texture Packs/Shengling/assets/minecraft/optifine/ctm/ores/diamond/z0.properties",
 		"/F/Beethoven/Minecraft/Texture Packs/Shengling/assets/minecraft/optifine/ctm/ores/diamond/3_e.png",
@@ -601,12 +607,10 @@
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/ctm/genFiles.py",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.1/RoughNote.py",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.1/widgets/EditText.py",
-		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/debug",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/textures/widgets/Edit Text/Clicked/c.png",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/ui/Cursor.py",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/Mask.py",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/main.py",
-		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/ui/Label.py",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.1/cursor.py",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.1/main.py",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/widgets.py",
@@ -709,15 +713,11 @@
 		"/F/Projects/RPS/config.py",
 		"/F/Projects/RPS/projects.py",
 		"/F/Projects/RPS/parser.py",
-		"/F/Projects/RPS/eval.py",
-		"/F/Projects/RPS/exec.py",
-		"/F/Projects/RPS/TEST_01/main.rps",
-		"/F/Discord Bot/roles.json",
-		"/F/Discord Bot/spyfall.py"
+		"/F/Projects/RPS/eval.py"
 	],
 	"find":
 	{
-		"height": 41.0
+		"height": 29.0
 	},
 	"find_in_files":
 	{
@@ -731,6 +731,20 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"red",
+			"changeState",
+			"r",
+			"Dropdown",
+			"#",
+			"1",
+			"render",
+			"surface",
+			"HoveredSpriteShape",
+			"pos",
+			"Button",
+			"EditText",
+			"Button",
+			"Clicked",
 			"stateA",
 			"HoveredSpriteShape",
 			"self.state == \"Clicked\"",
@@ -844,21 +858,7 @@
 			"Button",
 			"pass",
 			"clickAnimation",
-			"hidden",
-			"maskedImage",
-			"index",
-			"obj",
-			"append",
-			"500",
-			"dest",
-			"width",
-			"pygame",
-			"Dimensions",
-			"scaledSurface",
-			"100",
-			"surface",
-			"height",
-			"pass"
+			"hidden"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -902,7 +902,7 @@
 	},
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 42.0
 	},
 	"input":
 	{
@@ -933,11 +933,15 @@
 	"menu_visible": false,
 	"output.exec":
 	{
-		"height": 133.0
+		"height": 254.0
 	},
 	"output.find_results":
 	{
 		"height": 0.0
+	},
+	"output.help":
+	{
+		"height": 522.0
 	},
 	"output.stino_build_panel":
 	{
@@ -950,7 +954,7 @@
 	"pinned_build_system": "",
 	"replace":
 	{
-		"height": 73.0
+		"height": 54.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -987,7 +991,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 249.0,
+	"side_bar_width": 225.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
