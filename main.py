@@ -1,7 +1,6 @@
 import pygame
 from utils.ui.cursor import Cursor
-from utils.ui.Dropdown import Dropdown
-from utils.ui.Checkbox import Checkbox
+from utils.ui.Listview import ListView, CustomView, CustomViewLoader
 import numpy as np
 
 pygame.init()
@@ -10,6 +9,21 @@ pygame.display.set_caption("Minecraft Texture Pack Maker")
 clock = pygame.time.Clock()
 
 Bruh = False
+
+cursor = Cursor(r"./textures/cursors/Normal.png", r"./textures/cursors/MouseClick/", Window)
+
+def action(self, val, ind):
+	print(self.pos, val, ind)
+
+class BlockSelector(CustomView):
+	pass
+
+class BlockSelectorLoader(CustomViewLoader):
+	pass
+
+customView = BlockSelector()
+customViewLoader = BlockSelectorLoader(customView, "Gold Ingot, minecraft:gold_ingot, 266, 0;")
+listView = ListView(customViewLoader, (0,0), action)
 
 pygame.key.set_repeat(1,100)
 
