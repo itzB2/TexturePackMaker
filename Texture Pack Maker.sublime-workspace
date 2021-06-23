@@ -4,6 +4,78 @@
 		"selected_items":
 		[
 			[
+				"max",
+				"maxSize〔argument〕"
+			],
+			[
+				"selected",
+				"selectedTimer"
+			],
+			[
+				"op",
+				"options"
+			],
+			[
+				"text",
+				"textInd"
+			],
+			[
+				"buffer",
+				"bufferS"
+			],
+			[
+				"ma",
+				"maxSize"
+			],
+			[
+				"l",
+				"listView"
+			],
+			[
+				"Lis",
+				"ListCustomView"
+			],
+			[
+				"List",
+				"ListCustomView〔class〕"
+			],
+			[
+				"event",
+				"events〔variable〕"
+			],
+			[
+				"cust",
+				"customViewLoader〔variable〕"
+			],
+			[
+				"av",
+				"availableOptions"
+			],
+			[
+				"min",
+				"minecraftNamespace"
+			],
+			[
+				"opti",
+				"option"
+			],
+			[
+				"sh",
+				"shearedImg〔variable〕"
+			],
+			[
+				"ro",
+				"rotatedImg〔variable〕"
+			],
+			[
+				"she",
+				"sheared_img〔variable〕"
+			],
+			[
+				"h",
+				"h1\tTag"
+			],
+			[
 				"Grenn",
 				"GreenClickAnim"
 			],
@@ -34,10 +106,6 @@
 			[
 				"Not",
 				"NotClickedItemSpriteShape"
-			],
-			[
-				"text",
-				"textInd"
 			],
 			[
 				"optio",
@@ -138,10 +206,6 @@
 			[
 				"C",
 				"ClickedSpriteShape"
-			],
-			[
-				"event",
-				"eventFuncs"
 			],
 			[
 				"eve",
@@ -348,10 +412,6 @@
 				"Material〔class〕"
 			],
 			[
-				"ma",
-				"maskedSurface"
-			],
-			[
 				"Mask",
 				"MaskImage"
 			],
@@ -390,10 +450,6 @@
 			[
 				"io",
 				"iostream\tstandard header"
-			],
-			[
-				"l",
-				"lSDL2"
 			],
 			[
 				"scr",
@@ -458,62 +514,6 @@
 			[
 				"func",
 				"function〔variable〕"
-			],
-			[
-				"run",
-				"runtime〔variable〕"
-			],
-			[
-				"runt",
-				"runtimeFunctions〔variable〕"
-			],
-			[
-				"V",
-				"VarVal"
-			],
-			[
-				"funct",
-				"functionList〔variable〕"
-			],
-			[
-				"Func",
-				"Function"
-			],
-			[
-				"Var",
-				"VarName〔variable〕"
-			],
-			[
-				"Va",
-				"VarVal〔variable〕"
-			],
-			[
-				"Arg",
-				"Arg0"
-			],
-			[
-				"AR",
-				"Arg0"
-			],
-			[
-				"ke",
-				"keyword〔variable〕"
-			],
-			[
-				"add",
-				"addFunc〔variable〕"
-			],
-			[
-				"fun",
-				"functionName〔variable〕"
-			],
-			[
-				"splt",
-				"split"
-			],
-			[
-				"du",
-				"dumps〔function〕"
 			]
 		]
 	},
@@ -529,6 +529,10 @@
 		"selected_items":
 		[
 			[
+				"ip",
+				"Package Control: Install Package"
+			],
+			[
 				"pacakge Control",
 				"Package Control: Remove Package"
 			],
@@ -539,10 +543,6 @@
 			[
 				"remoote",
 				"Remote: Disconnect from Session"
-			],
-			[
-				"ip",
-				"Package Control: Install Package"
 			],
 			[
 				"package re",
@@ -586,15 +586,35 @@
 	},
 	"file_history":
 	[
-		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/ui/EditText.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/test.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/widgetUtils.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/.gitignore",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/README.md",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/ui/Dropdown.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/textures/Item Textures/Allium.png",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/textures/Item Textures/Acacia Door.png",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/textures/Item Textures/Acacia Pressure Plate.png",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/textures/Item Textures/2 Snow Layer.png",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/Image.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/TexturePackUtils.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/LoadPack/Coins.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/main.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/LoadPack/BadPvp.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/LoadPack/BountifulUpdate.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/textures/TexturePacks/Default Textures/run.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.1/RoughNote.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/LoadPack/LoadTexturePack.py",
+		"/F/Beethoven/Projects/Python Prototypes/T Pack/plot.py",
+		"/F/Beethoven/Projects/Python Prototypes/T Pack/Plot.py",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/requirements.txt",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/Texture Pack Maker.sublime-project",
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/ui/EditText.py",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/ui/Button.py",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/debug",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/ui/Checkbox.py",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/textures/widgets/Checkbox/RedAnimation/RedBG6.png",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/textures/widgets/Checkbox/RedAnimation/RedBG1.png",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/ui/Label.py",
-		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/widgetUtils.py",
 		"/F/Beethoven/Minecraft/Texture Packs/Shengling/assets/minecraft/optifine/ctm/ores/diamond/z0.properties",
 		"/F/Beethoven/Minecraft/Texture Packs/Shengling/assets/minecraft/optifine/ctm/ores/diamond/3_e.png",
 		"/F/Beethoven/Minecraft/Texture Packs/Shengling/pack.mcmeta",
@@ -603,14 +623,11 @@
 		"/F/Unsorted/Python Projects/Chess AI/board.py",
 		"/F/Unsorted/Python Projects/OWN/CHIP8.py",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/ctm/CTM.py",
-		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/Image.py",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/ctm/genFiles.py",
-		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.1/RoughNote.py",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.1/widgets/EditText.py",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/textures/widgets/Edit Text/Clicked/c.png",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/ui/Cursor.py",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/Mask.py",
-		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/main.py",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.1/cursor.py",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.1/main.py",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/widgets.py",
@@ -696,28 +713,11 @@
 		"/F/AOC/Day2.py",
 		"/F/AOC/Day1.input",
 		"/F/Discord Bot/RoughNote.py",
-		"/F/sockets/server.py",
-		"/F/sockets/UserInfo.txt",
-		"/F/sockets/test.py",
-		"/F/sockets/client.py",
-		"/F/Public socket/client.py",
-		"/F/Projects/RPS/comms.py",
-		"/F/Projects/RPS/script.py",
-		"/F/Projects/RPS/project.py",
-		"/F/Projects/RPS/MAIN.RPS",
-		"/F/Projects/RPS/main.py",
-		"/F/Projects/RPS/conf/onORoff.yaml",
-		"/F/Projects/RPS/utils.py",
-		"/F/Projects/RPS/conf/COMMS.yaml",
-		"/F/Projects/RPS/TEST_01/config.yaml",
-		"/F/Projects/RPS/config.py",
-		"/F/Projects/RPS/projects.py",
-		"/F/Projects/RPS/parser.py",
-		"/F/Projects/RPS/eval.py"
+		"/F/sockets/server.py"
 	],
 	"find":
 	{
-		"height": 29.0
+		"height": 31.0
 	},
 	"find_in_files":
 	{
@@ -728,9 +728,47 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
+			"100",
+			"200",
+			"100",
+			"events",
+			"Window",
+			"render",
+			"1520",
+			"768",
+			"options",
+			"p.UpdatedDimensions[0]",
+			"pass",
+			"ya_yeet",
+			"defaultAction",
+			"pass",
+			"import pygame\nfrom utils.widgetUtils import *\nfrom utils.funcs import *\n\nNotClickedItemSpriteShape = SpriteShapeAsset(\n\t\"./textures/widgets/DropDown/ListItems/Items/tL.png\", \n\t\"./textures/widgets/DropDown/ListItems/Items/t.png\", \n\t\"./textures/widgets/DropDown/ListItems/Items/tR.png\", \n\t\"./textures/widgets/DropDown/ListItems/Items/bL.png\", \n\t\"./textures/widgets/DropDown/ListItems/Items/b.png\", \n\t\"./textures/widgets/DropDown/ListItems/Items/bR.png\", \n\t\"./textures/widgets/DropDown/ListItems/Items/l.png\", \n\t\"./textures/widgets/DropDown/ListItems/Items/c.png\", \n\t\"./textures/widgets/DropDown/ListItems/Items/r.png\",\n\t{\"TL\":(4,4),\"T\":(92,4),\"TR\":(4,4),\n\t \"BL\":(4,4),\"B\":(92,4),\"BR\":(4,4),\n\t \"L\":(4,22),\"C\":(92,22),\"R\":(4,22)\n\t})\nHoveredItemSpriteShape = SpriteShapeAsset(\n\t\"./textures/widgets/DropDown/ListItems/HoveredItems/tL.png\", \n\t\"./textures/widgets/DropDown/ListItems/HoveredItems/t.png\", \n\t\"./textures/widgets/DropDown/ListItems/HoveredItems/tR.png\", \n\t\"./textures/widgets/DropDown/ListItems/HoveredItems/bL.png\", \n\t\"./textures/widgets/DropDown/ListItems/HoveredItems/b.png\", \n\t\"./textures/widgets/DropDown/ListItems/HoveredItems/bR.png\", \n\t\"./textures/widgets/DropDown/ListItems/HoveredItems/l.png\", \n\t\"./textures/widgets/DropDown/ListItems/HoveredItems/c.png\", \n\t\"./textures/widgets/DropDown/ListItems/HoveredItems/r.png\",\n\t{\"TL\":(4,4),\"T\":(92,4),\"TR\":(4,4),\n\t \"BL\":(4,4),\"B\":(92,4),\"BR\":(4,4),\n\t \"L\":(4,22),\"C\":(92,22),\"R\":(4,22)\n\t})\n\ndef defaultAction(self, val, ind):\n\tpass\n\nclass ListView:\n\tdef __init__(self, pos, action=defaultAction):\n\t\tself.pos = pos\n\t\tself.action = action\n\t\tself.objects = []\n\n\tdef renderOption(self):\n\t\tpass\n\n\tdef updated(self):\n\t\tpass\n\n\tdef render(self, surface, events):\n\t\tpass",
+			"pass",
+			"defaultTexturePackPath",
+			"pass",
+			"null",
+			"{}",
+			"pass",
+			"version",
+			"rotated_img",
+			"    ",
+			"-30",
+			"    ",
+			"src",
+			"    ",
+			"plt.imshow(img)\n# plt.show()",
+			"    ",
+			"16",
+			"    ",
+			"Image.Image",
+			"    ",
+			"   ",
+			"cy",
+			"    ",
+			"wodulnt",
 			"red",
 			"changeState",
 			"r",
@@ -820,52 +858,23 @@
 			"textObj",
 			"cursor",
 			"RED",
-			"Bruh",
-			"height",
-			"length",
-			"100",
-			"bg",
-			"textPointer",
-			"eplison",
-			"right",
-			"left",
-			"right",
-			"length",
-			"textPointer.render(surface)",
-			"textPointer",
-			"pointerPos",
-			"png",
-			"length1",
-			"height",
-			"length",
-			"Clicked",
-			"label",
-			"editText",
-			"Label",
-			"EditText",
-			"Label",
-			"from",
-			"250",
-			"400",
-			"300",
-			"200",
-			"HoveringOnClickable",
-			"cur",
-			"length",
-			"textObj",
-			"    ",
-			"lol",
-			"Button",
-			"pass",
-			"clickAnimation",
-			"hidden"
+			"Bruh"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
+			"None",
+			"[]",
+			"\t",
+			"angle",
+			"\t",
+			"15",
+			"\t",
+			"Image",
+			"\t",
 			"pos",
 			"y",
 			"x",
@@ -902,7 +911,7 @@
 	},
 	"incremental_find":
 	{
-		"height": 42.0
+		"height": 31.0
 	},
 	"input":
 	{
@@ -933,7 +942,7 @@
 	"menu_visible": false,
 	"output.exec":
 	{
-		"height": 254.0
+		"height": 340.0
 	},
 	"output.find_results":
 	{
@@ -954,7 +963,7 @@
 	"pinned_build_system": "",
 	"replace":
 	{
-		"height": 54.0
+		"height": 75.0
 	},
 	"save_all_on_build": true,
 	"select_file":

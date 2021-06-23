@@ -1,29 +1,22 @@
 import pygame
 from utils.ui.cursor import Cursor
-from utils.ui.Listview import ListView, CustomView, CustomViewLoader
+from utils.ui.Listview import ListView
 import numpy as np
 
 pygame.init()
-Window = pygame.display.set_mode((500,500), pygame.SRCALPHA)
+# Window = pygame.display.set_mode((1520,768), pygame.SRCALPHA)
+Window = pygame.display.set_mode((600,600), pygame.SRCALPHA)
 pygame.display.set_caption("Minecraft Texture Pack Maker")
 clock = pygame.time.Clock()
 
 Bruh = False
 
+def ya_yeet(self, val, ind):
+	print(val, ind)
+
 cursor = Cursor(r"./textures/cursors/Normal.png", r"./textures/cursors/MouseClick/", Window)
 
-def action(self, val, ind):
-	print(self.pos, val, ind)
-
-class BlockSelector(CustomView):
-	pass
-
-class BlockSelectorLoader(CustomViewLoader):
-	pass
-
-customView = BlockSelector()
-customViewLoader = BlockSelectorLoader(customView, "Gold Ingot, minecraft:gold_ingot, 266, 0;")
-listView = ListView(customViewLoader, (0,0), action)
+listView = ListView((0, 0), (200,150), 1, ["Chiseled Deepslate", "Cracked Deepslate Bricks", "Deepslate Bricks", "Cracked Deepslate Tiles", "Deepslate Tiles", "Polished Deepslate", "Cobbled Deepslate"], ya_yeet)
 
 pygame.key.set_repeat(1,100)
 
@@ -36,5 +29,6 @@ while not Bruh:
 			Bruh = True
 
 	Window.fill((0,0,0,255))
+	listView.update(events, Window)
 	cursor.update(events)
 	pygame.display.flip()

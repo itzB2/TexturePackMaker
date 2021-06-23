@@ -170,7 +170,7 @@ class Text:
 	def __init__(self, text, fontPath, size, pos):
 		self.text = text
 		self.p = fontPath
-		self.size = size
+		self.size = 16
 		self.pos = pos
 		self.type = "Text"
 		font = pygame.font.Font(self.p, self.size)

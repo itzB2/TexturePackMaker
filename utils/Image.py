@@ -11,7 +11,7 @@ class PixelID():
 		return f"Value: {self.data}, X Coord: {self.x}, Y Coord: {self.y}"
 
 class BlockTexture():
-	def __init__(self, width, height, pilImage = None):
+	def __init__(self, width, height, animated=False, pilImage = None):
 		self.width = width
 		self.height = height
 		self.pilImage = pilImage if pilImage else Image.new(mode="RGBA", size=(width,height), color=(0,0,0,0))
@@ -55,3 +55,10 @@ class BlockTexture():
 	def save(self, path):
 		self.pilImage.save(path)
 
+class ModelTexture():
+	def __init__(self, name, files):
+		pass
+
+class EntityTexture():
+	def __init__(self, name, file):
+		pass
