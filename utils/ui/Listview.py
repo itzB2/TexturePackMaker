@@ -84,16 +84,19 @@ class DropdownOption():
 		self.p = parent
 		self.pos = pos
 		self.startPos = [0,0]
-		self.objects = list(range(0, self.ro[1]))
+		self.objects = list(range(0, rO[1]))
+		print(self.objects)
 		self.refresh()
 
 	def render(self, surface):
 		for option in self.objects:
+			print(option)
 			option.render(surface)
 
 	def refresh(self):
 		self.pos = [0,0]
 		for ind, val in zip(range(self.ro[0], self.ro[1]), range(0, len(self.options)-1)):
+			print(ind, val)
 			option = self.option[ind]
 			fO = self.options[ind]
 			self.objects[val] = Option((self.p.UpdatedDimensions[1], self.bs),self.pos,
@@ -112,9 +115,11 @@ class ListView():
 		self.mS = maxSize
 		self.state = "Not Clicked"
 		self.surface = None
+		self.active = True
 		self.action = action
 		self.UpdatedDimensions = [100*size, 30*size]
-		self.renderObjects = [0, clamp(int(self.mS[1]/30), 0, len(values))]
+		self.renderObjects = [0, min(maxSize[1], len(values)*30)//30]
+		print(self.renderObjects)
 		self.maxInOneView = clamp(int(self.mS[1]/30), 0, len(values))
 		self.maxScrollDistance = min(maxSize[1], len(values)*30)
 		self.objects = [
@@ -149,25 +154,24 @@ class ListView():
 	def update(self, events, surface):
 		if self.selectedTimer != 0:
 			self.selectedTimer -= 1
-		def checkCollision():
-			return mPos[0] > self.pos[0] and mPos[0] < self.pos[0]+self.collisionDimensions[1] and mPos[1] > self.pos[1] and mPos[1] < self.pos[1]+self.collisionDimensions[0]
 
-		for event in events:
-			if event.type == pygame.MOUSEBUTTONDOWN:
-				if event.button == 4:
-					self.renderObjects = [
-											clamp(self.renderObjects[1]-(1+self.maxInOneView), 0, len(self.values)),
-											clamp(self.renderObjects[1]-1, self.maxInOneView, len(self.values))
-										 ]
-					self.objects[0].ro = self.renderObjects
-					self.objects[0].refresh()
-				elif event.button == 5:
-					self.renderObjects = [
-											clamp(self.renderObjects[1]+1, 0, len(self.values))-self.maxInOneView,
-											clamp(self.renderObjects[1]+1, 0, len(self.values))
-										 ]
-					self.objects[0].ro = self.renderObjects
-					self.objects[0].refresh()
+		if self.active:
+			for event in events:
+				if event.type == pygame.MOUSEBUTTONDOWN:
+					if event.button == 4:
+						self.renderObjects = [
+												clamp(self.renderObjects[1]-(1+self.maxInOneView), 0, len(self.values)),
+												clamp(self.renderObjects[1]-1, self.maxInOneView, len(self.values))
+											 ]
+						self.objects[0].ro = self.renderObjects
+						self.objects[0].refresh()
+					elif event.button == 5:
+						self.renderObjects = [
+												clamp(self.renderObjects[1]+1, 0, len(self.values))-self.maxInOneView,
+												clamp(self.renderObjects[1]+1, 0, len(self.values))
+											 ]
+						self.objects[0].ro = self.renderObjects
+						self.objects[0].refresh()
 
 		if self.visible:
 			self.render(surface)
