@@ -586,6 +586,7 @@
 	},
 	"file_history":
 	[
+		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.3/README.md",
 		"/C/Users/George/AppData/Roaming/.minecraft/resourcepacks.json",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/test.py",
 		"/F/Beethoven/Projects/Python/Texture Pack maker/0.0.2/utils/widgetUtils.py",
@@ -712,8 +713,7 @@
 		"/F/AOC/Day2.input",
 		"/F/AOC/Day1.py",
 		"/F/AOC/Day2.py",
-		"/F/AOC/Day1.input",
-		"/F/Discord Bot/RoughNote.py"
+		"/F/AOC/Day1.input"
 	],
 	"find":
 	{
@@ -731,6 +731,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"pass",
+			"window",
+			"pass",
 			"option",
 			"objects",
 			"100",
@@ -855,10 +858,7 @@
 			"Texture",
 			"400",
 			"300",
-			"400",
-			"Bruh",
-			"textObj",
-			"cursor"
+			"400"
 		],
 		"highlight": true,
 		"in_selection": false,
