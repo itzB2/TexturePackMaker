@@ -717,7 +717,7 @@
 	],
 	"find":
 	{
-		"height": 31.0
+		"height": 43.2
 	},
 	"find_in_files":
 	{
@@ -731,6 +731,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"§c",
+			"§",
+			"tnt",
 			"pass",
 			"window",
 			"pass",
@@ -855,10 +858,7 @@
 			"    ",
 			".debug",
 			"transparency",
-			"Texture",
-			"400",
-			"300",
-			"400"
+			"Texture"
 		],
 		"highlight": true,
 		"in_selection": false,
