@@ -85,12 +85,10 @@ class DropdownOption():
 		self.pos = pos
 		self.startPos = [0,0]
 		self.objects = list(range(0, rO[1]))
-		print(self.objects)
 		self.refresh()
 
 	def render(self, surface):
-		for option in self.objects:
-			print(option)
+		for option in self.options:
 			option.render(surface)
 
 	def refresh(self):
@@ -146,10 +144,10 @@ class ListView():
 		self.state = state
 
 	def render(self, surface):
-		options = self.objects[0]
+		options = self.dropdownOption
 		options.render(self.mask)
 		surface.blit(self.mask, self.pos)
-		self.objects = [options]
+		self.dropdownOption = options
 
 	def update(self, events, surface):
 		if self.selectedTimer != 0:
@@ -163,17 +161,18 @@ class ListView():
 												clamp(self.renderObjects[1]-(1+self.maxInOneView), 0, len(self.values)),
 												clamp(self.renderObjects[1]-1, self.maxInOneView, len(self.values))
 											 ]
-						self.objects[0].ro = self.renderObjects
-						self.objects[0].refresh()
+						self.dropdownOption.ro = self.renderObjects
+						self.dropdownOption.refresh()
 					elif event.button == 5:
 						self.renderObjects = [
 												clamp(self.renderObjects[1]+1, 0, len(self.values))-self.maxInOneView,
 												clamp(self.renderObjects[1]+1, 0, len(self.values))
 											 ]
-						self.objects[0].ro = self.renderObjects
-						self.objects[0].refresh()
+						self.dropdownOption.ro = self.renderObjects
+						self.dropdownOption.refresh()
 
 		if self.visible:
 			self.render(surface)
+
 
 		self.surface = surface
